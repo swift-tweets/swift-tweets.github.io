@@ -1,5 +1,10 @@
 body {
   font-family: sans-serif;
+  background-color: rgb(29, 161, 242);
+}
+
+section {
+  background-color: white;
 }
 
 .text-primary {
