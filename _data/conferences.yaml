@@ -1,0 +1,40 @@
+- date: "2016-00-00"
+  dayOfWeek: "FRI"
+  entryLink: ""
+  contact:
+    twitterId: koher
+    email: koher@koherent.org
+  tweeters:
+    - id: _mono
+      icon: https://pbs.twimg.com/profile_images/476454722593771520/goSBw3js.png
+      profile: |
+        ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。
+    - id: koher
+      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+      profile: |
+        [Qoncept](http://qoncept.co.jp/) 勤務。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、誰もが楽しくプログラミングを学べることを目指して [SWIFT QUEST](https://swift-quest.github.io/) という Playground Book を執筆中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+    - id: susieyy
+      icon: https://pbs.twimg.com/profile_images/526384966729355266/pVDh04p6.png
+      profile: |
+        ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。
+    - id: tarunon
+      icon: https://pbs.twimg.com/profile_images/677005712497713152/X_2Mf8gO.jpg
+      profile: |
+        ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。
+  talks:
+    - time: "00:00"
+      title: 発表タイトル
+      tweeterId: susieyy
+      description: 発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。
+    - time: "00:00"
+      title: 発表タイトル
+      tweeterId: koher
+      description: 発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。
+    - time: "00:00"
+      title: 発表タイトル
+      tweeterId: tarunon
+      description: 発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。
+    - time: "00:00"
+      title: 発表タイトル
+      tweeterId: _mono
+      description: 発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。

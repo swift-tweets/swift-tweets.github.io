@@ -1,3 +1,6 @@
+---
+---
+{% assign conference = site.data.conferences[0] %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,7 +82,7 @@
                 <h1 id="homeHeading"><img src="img/swift.png" alt="Swift Logo" /></h1>
                 <hr>
                 <h2><a href="">#swtw</a></h2>
-                <h3>2016-00-00 (FRI)</h3>
+                <h3>{{ conference.date }} ({{ conference.dayOfWeek }})</h3>
                 <p><strong>Swift Tweets</strong> は Twitter 上で開催される Swift に関する <strike>Meetup</strike> Tweetup です。 4 人の発表者が 30 分の持ち時間（約 60 ツイート）で、 Swift について発表します。</p>
                 <a href="#features" class="btn btn-primary btn-xl page-scroll">詳細を見る</a>
             </div>
@@ -148,34 +151,15 @@
       </div>
       <div class="container">
           <div class="row">
+            {% for tweeter in conference.tweeters %}
             <div class="col-lg-6 col-sm-12 text-center">
               <div class="feature-box">
-                <img class="portrait" src="img/dark.png" alt="@aaaaaa" />
-                <h3><a href="">@aaaaaa</a></h3>
-                <p class="text-muted">ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。</p>
+                <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />
+                <h3><a href="https://twitter.com/{{ tweeter.id }}">@{{ tweeter.id }}</a></h3>
+                <p class="text-muted">{{ tweeter.profile | markdownify }}</p>
               </div>
             </div>
-            <div class="col-lg-6 col-sm-12 text-center">
-              <div class="feature-box">
-                <img class="portrait" src="img/dark.png" alt="@aaaaaa" />
-                <h3><a href="">@aaaaaa</a></h3>
-                <p class="text-muted">ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 text-center">
-              <div class="feature-box">
-                <img class="portrait" src="img/dark.png" alt="@aaaaaa" />
-                <h3><a href="">@aaaaaa</a></h3>
-                <p class="text-muted">ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 text-center">
-              <div class="feature-box">
-                <img class="portrait" src="img/dark.png" alt="@aaaaaa" />
-                <h3><a href="">@aaaaaa</a></h3>
-                <p class="text-muted">ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。</p>
-              </div>
-            </div>
+            {% endfor %}
           </div>
       </div>
     </section>
@@ -187,7 +171,7 @@
                     <h2 class="section-heading">タイムテーブル</h2>
                     <hr class="primary">
                     <div class="panel panel-default bg-dark">
-                      <div class="panel-heading bg-dark">2016-00-00 (FRI)</div>
+                      <div class="panel-heading bg-dark">{{ conference.date }} ({{ conference.dayOfWeek }})</div>
                       <table class="table">
                         <tbody>
                           <tr>
@@ -196,38 +180,16 @@
                               <h4>開始</h4>
                             </td>
                           </tr>
+                          {% for talk in conference.talks %}
                           <tr>
-                            <th>00:00</th>
+                            <th>{{ talk.time }}</th>
                             <td>
-                              <h4>"発表タイトル"</h4>
-                              <h5><a href="">@aaaaaa</a></h5>
-                              <p>発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。</p>
+                              <h4>"{{ talk.title }}"</h4>
+                              <h5><a href="">@{{ talk.tweeterId }}</a></h5>
+                              <p>{{ talk.description | markdownify }}</p>
                             </td>
                           </tr>
-                          <tr>
-                            <th>00:00</th>
-                            <td>
-                              <h4>"発表タイトル"</h4>
-                              <h5><a href="">@aaaaaa</a></h5>
-                              <p>発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>00:00</th>
-                            <td>
-                              <h4>"発表タイトル"</h4>
-                              <h5><a href="">@aaaaaa</a></h5>
-                              <p>発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>00:00</th>
-                            <td>
-                              <h4>"発表タイトル"</h4>
-                              <h5><a href="">@aaaaaa</a></h5>
-                              <p>発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。発表内容がここに入ります。</p>
-                            </td>
-                          </tr>
+                          {% endfor %}
                           <tr>
                             <th>00:00</th>
                             <td>
@@ -257,8 +219,8 @@
                     <h2 class="section-heading">参加方法</h2>
                     <hr class="primary">
                     <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は Twitter で <a href="">#swtw</a> のハッシュタグを御覧下さい。</p>
-                    <p>質問等でリプライやメンションするときもできるだけ <a href="">#swtw</a> のハッシュタグをつけて下さい。発表者および参加者間で自由に質問していただけます。他の参加者から質問を受けることについてもご了承下さい。参加者一覧については<a href="">こちら</a>を御覧下さい。</p>
-                    <a href="" class="btn btn-primary btn-xl">参加する</a>
+                    <p>質問等でリプライやメンションするときもできるだけ <a href="">#swtw</a> のハッシュタグをつけて下さい。発表者および参加者間で自由に質問していただけます。他の参加者から質問を受けることについてもご了承下さい。参加者一覧については<a href="{{ conference.entryLink }}">こちら</a>を御覧下さい。</p>
+                    <a href="{{ conference.entryLink }}" class="btn btn-primary btn-xl">参加する</a>
                 </div>
             </div>
         </div>
@@ -274,11 +236,11 @@
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-twitter fa-3x sr-contact"></i>
-                    <p><a href="https://twitter.com/koher">@koher</a></p>
+                    <p><a href="https://twitter.com/{{ conference.contact.twitterId }}">@{{ conference.contact.twitterId }}</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:koher@koherent.org">koher@koherent.org</a></p>
+                    <p><a href="mailto:{{ conference.contact.email }}">{{ conference.contact.email }}</a></p>
                 </div>
             </div>
         </div>

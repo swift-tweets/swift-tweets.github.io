@@ -127,6 +127,11 @@ header .btn-primary {
   color: white;
 }
 
+.bg-colored a:hover,
+.bg-colored a:focus:hover {
+  color: white;
+}
+
 .bg-colored hr {
   border-color: white;
 }
