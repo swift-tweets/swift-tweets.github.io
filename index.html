@@ -81,8 +81,8 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading"><img src="img/swift.png" alt="Swift Logo" /></h1>
                 <hr>
-                <h2><a href="">#swtw</a></h2>
-                <h3>{{ conference.date }} ({{ conference.dayOfWeek }})</h3>
+                <h2><a href="https://twitter.com/hashtag/swtws?f=tweets">#swtws</a></h2>
+                <h3>{{ conference.date }} {{ conference.time }} {{ conference.timezone }}</h3>
                 <p><strong>Swift Tweets</strong> は Twitter 上で開催される Swift に関する <strike>Meetup</strike> Tweetup です。 4 人の発表者が 30 分の持ち時間（約 60 ツイート）で、 Swift について発表します。</p>
                 <a href="#features" class="btn btn-primary btn-xl page-scroll">詳細を見る</a>
             </div>
@@ -175,9 +175,9 @@
                       <table class="table">
                         <tbody>
                           <tr>
-                            <th>00:00</th>
+                            <th>{{ conference.time }}</th>
                             <td>
-                              <h4>開始</h4>
+                              <h4>オープニング</h4>
                             </td>
                           </tr>
                           {% for talk in conference.talks %}
@@ -191,7 +191,7 @@
                           </tr>
                           {% endfor %}
                           <tr>
-                            <th>00:00</th>
+                            <th>{{ conference.freeTalkingTime }}</th>
                             <td>
                               <h4>交流タイム</h4>
                               <p>普段は、いきなりメンションツイートで何かを教えてもらったり質問したり意見を聞いたりすることは難しいと思いますが、この時間は参加者みんながそれを承諾しているという前提で、自由に交流して下さい。</p>
@@ -199,9 +199,9 @@
                             </td>
                           </tr>
                           <tr>
-                            <th>00:00</th>
+                            <th>{{ conference.closingTime }}</th>
                             <td>
-                              <h4>終了</h4>
+                              <h4>クロージング</h4>
                             </td>
                           </tr>
                         </tbody>
