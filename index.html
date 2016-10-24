@@ -156,7 +156,7 @@
               <div class="feature-box">
                 <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />
                 <h3><a href="https://twitter.com/{{ tweeter.id }}">@{{ tweeter.id }}</a></h3>
-                <p class="text-muted">{{ tweeter.profile | markdownify }}</p>
+                {{ tweeter.profile | markdownify }}
               </div>
             </div>
             {% endfor %}
