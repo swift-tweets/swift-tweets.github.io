@@ -141,6 +141,19 @@ header .btn-primary {
 }
 
 .bg-colored .text-muted {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-colored .feature-box p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-colored .feature-box p a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-colored .feature-box p a:hover,
+.bg-colored .feature-box p a:focus:hover {
   color: white;
 }
 
