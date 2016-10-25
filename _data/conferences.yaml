@@ -24,7 +24,7 @@
     - id: tarunon
       icon: https://pbs.twimg.com/profile_images/677005712497713152/X_2Mf8gO.jpg
       profile: |
-        ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。ここにプロフィールが入ります。
+        「たるのんだよ。すいふとをかくけど、おぶじぇしいもかくよ。」博多で Swift 書いてます。 `associatedtype` でガチガチに固めたコードを渡すと喜びます。 [GitHub はこちら](http://github.com/tarunon/)。
   talks:
     - time: "22:05"
       title: 発表タイトル
