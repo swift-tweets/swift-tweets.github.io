@@ -157,6 +157,15 @@ header .btn-primary {
   color: white;
 }
 
+.bg-colored code {
+  color: white;
+  background: none;
+}
+
+.bg-colored .feature-box p code {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .bg-dark {
   background-color: rgb(14, 80, 121);
   color: white;
