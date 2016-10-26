@@ -81,7 +81,7 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading"><img src="img/swift.png" alt="Swift Logo" /></h1>
                 <hr>
-                <h2><a href="https://twitter.com/hashtag/swtws?f=tweets">#swtws</a></h2>
+                <h2><a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a></h2>
                 <h3>{{ conference.date }} {{ conference.time }} {{ conference.timezone }}</h3>
                 <p><strong>Swift Tweets</strong> は Twitter 上で開催される Swift に関する <strike>Meetup</strike> Tweetup です。 4 人の発表者が 30 分の持ち時間（約 60 ツイート）で、 Swift について発表します。</p>
                 <a href="#features" class="btn btn-primary btn-xl page-scroll">詳細を見る</a>
@@ -218,8 +218,8 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">参加方法</h2>
                     <hr class="primary">
-                    <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は Twitter で <a href="">#swtw</a> のハッシュタグを御覧下さい。</p>
-                    <p>質問等でリプライやメンションするときもできるだけ <a href="">#swtw</a> のハッシュタグをつけて下さい。発表者および参加者間で自由に質問していただけます。他の参加者から質問を受けることについてもご了承下さい。参加者一覧については<a href="{{ conference.entryLink }}">こちら</a>を御覧下さい。</p>
+                    <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は Twitter で <a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a> のハッシュタグを御覧下さい。</p>
+                    <p>質問等でリプライやメンションするときもできるだけ <a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a> のハッシュタグをつけて下さい。発表者および参加者間で自由に質問していただけます。他の参加者から質問を受けることについてもご了承下さい。参加者一覧については<a href="{{ conference.entryLink }}">こちら</a>を御覧下さい。</p>
                     <a href="{{ conference.entryLink }}" class="btn btn-primary btn-xl">参加する</a>
                 </div>
             </div>
