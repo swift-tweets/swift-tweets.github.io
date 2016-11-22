@@ -32,9 +32,17 @@
       tweeterId: susieyy
       description: 現在のところ発表内容未定です。発表内容は12月中旬以降に決定予定です。発表内容が決定され次第、概要を掲載致します。
     - time: "22:35"
-      title: 発表タイトル未定
+      title: Swiftのエラー4分類が素晴らしすぎて、すべてのプログラマに知ってほしい
       tweeterId: koher
-      description: 現在のところ発表内容未定です。発表内容は12月中旬以降に決定予定です。発表内容が決定され次第、概要を掲載致します。
+      description: |
+        Swift Core Team がエラー処理について言語設計時に考察した ["Error Handling Rationale and Proposal"](https://github.com/apple/swift/blob/master/docs/ErrorHandlingRationale.rst) というドキュメントがあります。その中で、プログラミングにおけるエラーが次の四つに分類されています。
+
+        - Simple domain error
+        - Recoverable error
+        - Universal error
+        - Logic error
+
+        考えれば考えるほど、この分類が Swift に限らない本質的で素晴らしいものだとわかってきました。 Swift を書く上でエラーをどう設計すれば良いのか、 Java の検査例外はなぜ失敗したのか、多くの言語のエラー処理機構には何が足りないのか、この分類を通して僕が考えたことを紹介します。
     - time: "23:05"
       title: 発表タイトル未定
       tweeterId: tarunon
