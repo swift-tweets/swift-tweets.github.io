@@ -67,6 +67,9 @@
                         <a class="page-scroll" href="#entry">参加方法</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#sponsors">スポンサー</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">連絡先</a>
                     </li>
                 </ul>
@@ -212,7 +215,7 @@
         </div>
     </section>
 
-    <section id="entry">
+    <section id="entry" class="bg-colored">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -221,6 +224,20 @@
                     <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は Twitter で <a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a> のハッシュタグを御覧下さい。</p>
                     <p>リプライやメンションするときもできるだけ <a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a> のハッシュタグをつけて下さい。 Swift Tweets の目的の一つとして、オフラインの懇親会のように気軽に交流できる場をオンラインでも作りたいということがあります。開催中は面識のない他の参加者からリプライやメンションされることをご了承下さい。参加者一覧については<a href="{{ conference.entryLink }}">こちら</a>を御覧下さい。</p>
                     <a href="{{ conference.entryLink }}" class="btn btn-primary btn-xl">参加する</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">スポンサー</h2>
+                    <hr class="primary">
+                    <div class="text-center">
+                      <a href="http://qiita.com/"><img class="sponsor" src="img/sponsors/qiita.png" alt="Qiita" title="Qiita" /></a>
+                    </div>
                 </div>
             </div>
         </div>

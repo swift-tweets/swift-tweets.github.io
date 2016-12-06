@@ -144,6 +144,23 @@ header .btn-primary {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.bg-colored .btn-primary {
+  background-color: white;
+  border-color: white;
+  color: rgb(29, 161, 242);
+}
+
+.bg-colored .btn-primary:hover,
+.bg-colored .btn-primary:focus,
+.bg-colored .btn-primary.focus,
+.bg-colored .btn-primary:active,
+.bg-colored .btn-primary.active,
+.bg-colored .open > .dropdown-toggle.btn-primary {
+  color: white;
+  border-color: rgb(14, 80, 121);
+  background-color: rgb(14, 80, 121);
+}
+
 .bg-colored .feature-box p {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -195,6 +212,10 @@ header .btn-primary {
 img.portrait {
   width: 128px;
   border-radius: 64px;
+}
+
+img.sponsor {
+  width: 256px;
 }
 
 #features .container:not(:first-child):not(:nth-child(2)) {
