@@ -40,7 +40,7 @@
         - Simple domain error
         - Recoverable error
         - Universal error
-        - Logic error
+        - Logic failure
 
         考えれば考えるほど、この分類が本質的で素晴らしい、 Swift に限らないものだとわかってきました。 Swift を書く上でエラーをどう設計すれば良いのか、 Java の検査例外はなぜ失敗したのか、多くの言語のエラー処理機構には何が足りないのか、この分類を通して考えたことを紹介します。
     - time: "23:05"
