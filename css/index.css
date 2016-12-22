@@ -37,6 +37,10 @@ a:focus:hover {
   color: rgb(29, 161, 242);
 }
 
+code {
+  color: #333;
+}
+
 hr {
   border-color: rgb(29, 161, 242);
 }
@@ -194,6 +198,11 @@ header .btn-primary {
 
 .bg-dark h3 a,
 .bg-dark h5 a {
+  color: white;
+}
+
+.bg-dark code {
+  background-color: rgb(7, 60, 80);
   color: white;
 }
 
