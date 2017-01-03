@@ -2,8 +2,8 @@
   date: "2017-01-14"
   dayOfWeek: "SAT"
   time: "22:00"
-  freeTalkingTime: "24:05"
-  closingTime: "24:35"
+  freeTalkingTime: "24:25"
+  closingTime: "24:55"
   timezone: "JST"
   entryLink: "https://swift-tweets.connpass.com/event/45878/"
   contact:
@@ -58,3 +58,15 @@
         - [Unicodeとは？ その歴史と進化、開発者向け基礎知識 - Build Insider](http://www.buildinsider.net/language/csharpunicode/01)
         - [なぜSwiftの文字列APIは難しいのか \| プログラミング \| POSTD](http://postd.cc/why-is-swifts-string-api-so-hard/)
         - [「文字数」ってなぁに？〜String, NSString, Unicodeの基本〜 - Qiita](http://qiita.com/takasek/items/19438ecf7e60c8d53bbc)
+    - time: "24:05"
+      title: 発表タイトル未定
+      tweeterId: jpmartha_jp
+    - time: "24:10"
+      title: 発表タイトル未定
+      tweeterId: takasek
+    - time: "24:15"
+      title: 発表タイトル未定
+      tweeterId: S_Shimotori_pub
+    - time: "24:20"
+      title: 発表タイトル未定
+      tweeterId: es_kumagai
