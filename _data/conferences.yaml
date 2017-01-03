@@ -48,6 +48,13 @@
       tweeterId: tarunon
       description: Swift で `associatedtype` や Generics を駆使してプログラムを書いているとしばしば壁に打ち当たることがあると思います。気持ちよくコードを書いていたが、コンパイルが通らなくなってしまう。思い描いていた美しい世界が実現できずに悔しい思いをしたことはないでしょうか。このセッションでは、僕が Swift 3.0 以降で見つけた幾つかの「壁」と、それを超えるための Workaround を、コンパイルが通らなくなる原因とともに解説していきたいと思います。
     - time: "23:35"
-      title: 発表タイトル未定
+      title: "SwiftのString(文字列) APIとの付き合い方"
       tweeterId: _mono
-      description: 現在のところ発表内容未定です。発表内容は12月中旬以降に決定予定です。発表内容が決定され次第、概要を掲載致します。
+      description: |
+        Swift の String (文字列) API は、文字列の概念を厳密に扱うようになっており良くできています。その反面、難しい・取っつきにくい・普段取り扱う際に不便、など気になる点もあります。そんな Swift の String API とどのように付き合っていけば良いだろうか、という考察をしていきます。
+
+        前提として以下の記事に記載されている内容を理解済みとして、 Unicode・Swift の String API の仕様自体の説明は発表では最小限とする予定です。
+
+        - [Unicodeとは？ その歴史と進化、開発者向け基礎知識 - Build Insider](http://www.buildinsider.net/language/csharpunicode/01)
+        - [なぜSwiftの文字列APIは難しいのか \| プログラミング \| POSTD](http://postd.cc/why-is-swifts-string-api-so-hard/)
+        - [「文字数」ってなぁに？〜String, NSString, Unicodeの基本〜 - Qiita](http://qiita.com/takasek/items/19438ecf7e60c8d53bbc)
