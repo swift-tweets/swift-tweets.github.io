@@ -28,9 +28,12 @@
         「たるのんだよ。すいふとをかくけど、おぶじぇしいもかくよ。」博多で Swift 書いてます。 `associatedtype` でガチガチに固めたコードを渡すと喜びます。 [GitHub はこちら](http://github.com/tarunon/)。
   talks:
     - time: "22:05"
-      title: 発表タイトル未定
+      title: Swift時代に悩ましいUIViewControllerをどう扱うか
       tweeterId: susieyy
-      description: 現在のところ発表内容未定です。発表内容は12月中旬以降に決定予定です。発表内容が決定され次第、概要を掲載致します。
+      description: |
+        iOS アプリ開発において `UIViewController` は画面のライフルサイクルや遷移を担う中心的な存在ですが、悩ましい課題もいくつか孕んでいます。そんな `UIViewController` を Swift を活用して課題に立ち向かってみます。
+
+        今回ご紹介する方法が一般的により優れているということではなくアプリの要件、開発規模、チームメンバー構成、設計方針により適応できるかどうかはケース・バイ・ケースになると思うので開発の選択肢の１つとして捉えていただけると幸いです。
     - time: "22:35"
       title: Swiftのエラー4分類が素晴らしすぎるので、すべてのプログラマに知ってほしい
       tweeterId: koher
