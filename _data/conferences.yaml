@@ -2,7 +2,7 @@
   date: "2017-01-14"
   dayOfWeek: "SAT"
   time: "22:00"
-  freeTalkingTime: "24:25"
+  freeTalkingTime: "24:30"
   closingTime: "24:55"
   timezone: "JST"
   entryLink: "https://swift-tweets.connpass.com/event/45878/"
@@ -73,3 +73,6 @@
     - time: "24:20"
       title: 発表タイトル未定
       tweeterId: es_kumagai
+    - time: "24:25"
+      title: 発表タイトル未定
+      tweeterId: ktanaka117
