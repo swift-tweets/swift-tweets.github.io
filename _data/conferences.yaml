@@ -2,7 +2,7 @@
   date: "2017-01-14"
   dayOfWeek: "SAT"
   time: "22:00"
-  freeTalkingTime: "24:30"
+  freeTalkingTime: "24:35"
   closingTime: "24:55"
   timezone: "JST"
   entryLink: "https://swift-tweets.connpass.com/event/45878/"
@@ -76,3 +76,6 @@
     - time: "24:25"
       title: iOSにおけるクリーンアーキテクチャよもやま話
       tweeterId: ktanaka117
+    - time: "24:30"
+      title: "Clean Architecture 開発ツールの話"
+      tweeterId: yhirose741
