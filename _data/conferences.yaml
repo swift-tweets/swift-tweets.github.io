@@ -35,7 +35,7 @@
 
         今回ご紹介する方法が一般的により優れているということではなくアプリの要件、開発規模、チームメンバー構成、設計方針により適応できるかどうかはケース・バイ・ケースになると思うので開発の選択肢の１つとして捉えていただけると幸いです。
     - time: "22:35"
-      title: Swiftのエラー4分類が素晴らしすぎるので、すべてのプログラマに知ってほしい
+      title: Swiftのエラー4分類が素晴らしすぎるのでみんなに知ってほしい
       tweeterId: koher
       description: |
         Swift Core Team がエラー処理について言語設計時に考察した ["Error Handling Rationale and Proposal"](https://github.com/apple/swift/blob/master/docs/ErrorHandlingRationale.rst) というドキュメントがあります。その中で、プログラミングにおけるエラーが次の四つに分類されています。
