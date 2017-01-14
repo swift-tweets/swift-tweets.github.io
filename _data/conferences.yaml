@@ -62,7 +62,7 @@
         - [なぜSwiftの文字列APIは難しいのか \| プログラミング \| POSTD](http://postd.cc/why-is-swifts-string-api-so-hard/)
         - [「文字数」ってなぁに？〜String, NSString, Unicodeの基本〜 - Qiita](http://qiita.com/takasek/items/19438ecf7e60c8d53bbc)
     - time: "24:05"
-      title: 発表タイトル未定
+      title: 型推論のビルドが遅いらしいから調べてみる
       tweeterId: jpmartha_jp
     - time: "24:10"
       title: 恐怖！忍び寄るライブラリへのロックイン
