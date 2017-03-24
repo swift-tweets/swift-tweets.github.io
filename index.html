@@ -1,6 +1,6 @@
 ---
 ---
-{% assign conference = site.data.conferences[0] %}
+{% assign tweetup = site.data.tweetups[0] %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,8 +84,8 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading"><img src="img/swift.png" alt="Swift Logo" /></h1>
                 <hr>
-                <h2><a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a></h2>
-                <h3>{{ conference.date }} {{ conference.time }} {{ conference.timezone }}</h3>
+                <h2><a href="https://twitter.com/hashtag/{{ tweetup.hashtag }}?f=tweets">#{{ tweetup.hashtag }}</a></h2>
+                <h3>{{ tweetup.date }} {{ tweetup.time }} {{ tweetup.timezone }}</h3>
                 <p><strong>Swift Tweets</strong> は Twitter 上で開催される Swift に関する <strike>Meetup</strike> Tweetup です。 4 人の発表者が 30 分の持ち時間（約 60 ツイート）で、 Swift について発表します。</p>
                 <a href="#features" class="btn btn-primary btn-xl page-scroll">詳細を見る</a>
             </div>
@@ -154,7 +154,7 @@
       </div>
       <div class="container">
           <div class="row">
-            {% for tweeter in conference.tweeters %}
+            {% for tweeter in tweetup.tweeters %}
             <div class="col-lg-6 col-sm-12 text-center">
               <div class="feature-box">
                 <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />
@@ -174,16 +174,16 @@
                     <h2 class="section-heading">タイムテーブル</h2>
                     <hr class="primary">
                     <div class="panel panel-default bg-dark">
-                      <div class="panel-heading bg-dark">{{ conference.date }} ({{ conference.dayOfWeek }})</div>
+                      <div class="panel-heading bg-dark">{{ tweetup.date }} ({{ tweetup.dayOfWeek }})</div>
                       <table class="table">
                         <tbody>
                           <tr>
-                            <th>{{ conference.time }}</th>
+                            <th>{{ tweetup.time }}</th>
                             <td>
                               <h4>オープニング</h4>
                             </td>
                           </tr>
-                          {% for talk in conference.talks %}
+                          {% for talk in tweetup.talks %}
                           <tr>
                             <th>{{ talk.time }}</th>
                             <td>
@@ -194,15 +194,15 @@
                           </tr>
                           {% endfor %}
                           <tr>
-                            <th>{{ conference.freeTalkingTime }}</th>
+                            <th>{{ tweetup.freeTalkingTime }}</th>
                             <td>
                               <h4>フリートーク</h4>
                               <p>発表内容やその他 Swift について、自由にツイートする時間です。普段は、いきなりメンションツイートで何かを質問したり意見を聞いたりすることは難しいと思いますが、この時間はオフラインの懇親会のように自由に交流して下さい。</p>
-                              <p>Swift Tweets の参加者一覧は<a href="{{ conference.entryLink }}">こちら</a>です。</p>
+                              <p>Swift Tweets の参加者一覧は<a href="{{ tweetup.entryLink }}">こちら</a>です。</p>
                             </td>
                           </tr>
                           <tr>
-                            <th>{{ conference.closingTime }}</th>
+                            <th>{{ tweetup.closingTime }}</th>
                             <td>
                               <h4>クロージング</h4>
                             </td>
@@ -221,9 +221,9 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">参加方法</h2>
                     <hr class="primary">
-                    <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は Twitter で <a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a> のハッシュタグを御覧下さい。</p>
-                    <p>リプライやメンションするときもできるだけ <a href="https://twitter.com/hashtag/{{ conference.hashtag }}?f=tweets">#{{ conference.hashtag }}</a> のハッシュタグをつけて下さい。 Swift Tweets の目的の一つとして、オフラインの懇親会のように気軽に交流できる場をオンラインでも作りたいということがあります。開催中は面識のない他の参加者からリプライやメンションされることをご了承下さい。参加者一覧については<a href="{{ conference.entryLink }}">こちら</a>を御覧下さい。</p>
-                    <a href="{{ conference.entryLink }}" class="btn btn-primary btn-xl">参加する</a>
+                    <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は Twitter で <a href="https://twitter.com/hashtag/{{ tweetup.hashtag }}?f=tweets">#{{ tweetup.hashtag }}</a> のハッシュタグを御覧下さい。</p>
+                    <p>リプライやメンションするときもできるだけ <a href="https://twitter.com/hashtag/{{ tweetup.hashtag }}?f=tweets">#{{ tweetup.hashtag }}</a> のハッシュタグをつけて下さい。 Swift Tweets の目的の一つとして、オフラインの懇親会のように気軽に交流できる場をオンラインでも作りたいということがあります。開催中は面識のない他の参加者からリプライやメンションされることをご了承下さい。参加者一覧については<a href="{{ tweetup.entryLink }}">こちら</a>を御覧下さい。</p>
+                    <a href="{{ tweetup.entryLink }}" class="btn btn-primary btn-xl">参加する</a>
                 </div>
             </div>
         </div>
@@ -253,11 +253,11 @@
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-twitter fa-3x sr-contact"></i>
-                    <p><a href="https://twitter.com/{{ conference.contact.twitterId }}">@{{ conference.contact.twitterId }}</a></p>
+                    <p><a href="https://twitter.com/{{ tweetup.contact.twitterId }}">@{{ tweetup.contact.twitterId }}</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:{{ conference.contact.email }}">{{ conference.contact.email }}</a></p>
+                    <p><a href="mailto:{{ tweetup.contact.email }}">{{ tweetup.contact.email }}</a></p>
                 </div>
             </div>
         </div>
