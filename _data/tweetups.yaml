@@ -9,6 +9,10 @@
   contact:
     twitterId: koher
     email: koher@koherent.org
+  sponsors:
+    - id: "qiita"
+      name: "Qiita"
+      link: "http://qiita.com/"
   tweeters:
     - id: _mono
       icon: https://pbs.twimg.com/profile_images/476454722593771520/goSBw3js.png

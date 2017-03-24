@@ -235,9 +235,11 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">スポンサー</h2>
                     <hr class="primary">
+                    {% for sponsor in tweetup.sponsors %}
                     <div class="text-center">
-                      <a href="http://qiita.com/"><img class="sponsor" src="img/sponsors/qiita.png" alt="Qiita" title="Qiita" /></a>
+                      <a href="{{ sponsor.link }}"><img class="sponsor" src="img/sponsors/{{ sponsor.id }}.png" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" /></a>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
