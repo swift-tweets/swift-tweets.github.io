@@ -1,33 +1,31 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="@koher">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="@koher" />
 
     <title>Swift Tweets</title>
     <link rel="icon" type="image/png" href="img/icon.png" />
 
     <!-- Bootstrap Core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' />
 
     <!-- Plugin CSS -->
-    <link href="assets/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="assets/magnific-popup/magnific-popup.css" rel="stylesheet" />
 
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/creative.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +45,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Swift Tweets</a>
+                <a class="navbar-brand page-scroll" href="#page-top">{{ tweetup.title }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,6 +69,11 @@
                     <li>
                         <a class="page-scroll" href="#contact">連絡先</a>
                     </li>
+                    {% if tweetup.lastId %}
+                    <li>
+                        <a href="{{ tweetup.lastId }}">{{ site.data.tweetups[tweetup.lastId].shortTitle }}</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -85,7 +88,7 @@
                 <hr>
                 <h2><a href="https://twitter.com/hashtag/{{ tweetup.hashtag }}?f=tweets">#{{ tweetup.hashtag }}</a></h2>
                 <h3>{{ tweetup.date }} {{ tweetup.time }} {{ tweetup.timezone }}</h3>
-                <p><strong>Swift Tweets</strong> は Twitter 上で開催される Swift に関する <strike>Meetup</strike> Tweetup です。 4 人の発表者が 30 分の持ち時間（約 60 ツイート）で、 Swift について発表します。</p>
+                <p><strong>Swift Tweets</strong> は Twitter 上で開催される Swift に関する <strike>Meetup</strike> Tweetup です。発表者が Swift についてツイートで発表します。</p>
                 <a href="#features" class="btn btn-primary btn-xl page-scroll">詳細を見る</a>
             </div>
         </div>
@@ -176,36 +179,16 @@
                       <div class="panel-heading bg-dark">{{ tweetup.date }} ({{ tweetup.dayOfWeek }})</div>
                       <table class="table">
                         <tbody>
-                          <tr>
-                            <th>{{ tweetup.time }}</th>
-                            <td>
-                              <h4>オープニング</h4>
-                            </td>
-                          </tr>
-                          {% for talk in tweetup.talks %}
+                          {% for talk in tweetup.schedule %}
                           <tr>
                             <th>{{ talk.time }}</th>
                             <td>
-                              <h4>"{{ talk.title }}"</h4>
-                              <h5><a href="https://twitter.com/{{ talk.tweeterId }}">@{{ talk.tweeterId }}</a></h5>
+                              <h4>{% if talk.name %}{{ talk.name }}{% else %}"{{ talk.title }}"{% endif %}</h4>
+                              {% if talk.tweeterId %}<h5><a href="https://twitter.com/{{ talk.tweeterId }}">@{{ talk.tweeterId }}</a></h5>{% endif %}
                               {% if talk.description %}<p>{{ talk.description | markdownify }}</p>{% endif %}
                             </td>
                           </tr>
                           {% endfor %}
-                          <tr>
-                            <th>{{ tweetup.freeTalkingTime }}</th>
-                            <td>
-                              <h4>フリートーク</h4>
-                              <p>発表内容やその他 Swift について、自由にツイートする時間です。普段は、いきなりメンションツイートで何かを質問したり意見を聞いたりすることは難しいと思いますが、この時間はオフラインの懇親会のように自由に交流して下さい。</p>
-                              <p>Swift Tweets の参加者一覧は<a href="{{ tweetup.entryLink }}">こちら</a>です。</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>{{ tweetup.closingTime }}</th>
-                            <td>
-                              <h4>クロージング</h4>
-                            </td>
-                          </tr>
                         </tbody>
                       </table>
                     </div>
