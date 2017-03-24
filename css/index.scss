@@ -1,9 +1,15 @@
 ---
 ---
 
+$primary-color: rgb(29, 161, 242);
+$dark-color: rgb(14, 80, 121);
+$dark-link-color: rgb(142, 208, 249);
+$dark-code-bg-color: rgb(7, 60, 80);
+$weak-color: rgba(255, 255, 255, 0.8);
+
 body {
   font-family: sans-serif;
-  background-color: rgb(29, 161, 242);
+  background-color: $primary-color;
 }
 
 section {
@@ -11,12 +17,12 @@ section {
 }
 
 .text-primary {
-  color: rgb(29, 161, 242);
+  color: $primary-color;
 }
 
 .btn-primary {
-  background-color: rgb(29, 161, 242);
-  border-color: rgb(29, 161, 242);
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: white;
 }
 
@@ -27,17 +33,17 @@ section {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: white;
-  border-color: rgb(14, 80, 121);
-  background-color: rgb(14, 80, 121);
+  border-color: $dark-color;
+  background-color: $dark-color;
 }
 
 a {
-  color: rgb(29, 161, 242);
+  color: $primary-color;
 }
 
 a:hover,
 a:focus:hover {
-  color: rgb(29, 161, 242);
+  color: $primary-color;
 }
 
 code {
@@ -45,189 +51,196 @@ code {
 }
 
 hr {
-  border-color: rgb(29, 161, 242);
+  border-color: $primary-color;
 }
 
 header {
   background-image: none;
-  background-color: rgb(29, 161, 242);
+  background-color: $primary-color;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  h1 img {
+    width: 256px;
+    height: 256px;
+  }
+
+  h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  hr {
+    border-color: white;
+  }
+
+  .header-content .header-content-inner p {
+    color: $weak-color;
+  }
+
+  .btn-primary {
+    background-color: white;
+    border-color: white;
+    color: $primary-color;
+  }
 }
 
-header a {
-  color: white;
-}
+.navbar-default {
+  .navbar-header .navbar-brand {
+    text-transform: none;
+  }
 
-header a:hover {
-  color: white;
-}
+  &.affix {
+    .navbar-header {
+      .navbar-brand {
+        text-transform: none;
+        color: $primary-color;
+      }
 
-header h1 img {
-  width: 256px;
-  height: 256px;
-}
+      .navbar-brand:hover,
+      .navbar-brand:focus {
+        color: $dark-color;
+      }
+    }
 
-header h2 {
-  font-size: 50px;
-  margin-bottom: 0;
-}
+    .nav > li > a:hover,
+    .nav > li > a:focus:hover {
+      color: $primary-color;
+    }
 
-header h3 {
-  font-size: 30px;
-  margin-top: 0;
-}
+    .nav > li > a:hover,
+    .nav > li > a:focus:hover {
+      color: $primary-color;
+    }
+  }
 
-header hr {
-  border-color: white;
-}
-
-header .header-content .header-content-inner p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-header .btn-primary {
-  background-color: white;
-  border-color: white;
-  color: rgb(29, 161, 242);
-}
-
-.navbar-default .navbar-header .navbar-brand {
-  text-transform: none;
+  .nav > li.active > a,
+  .nav > li.active > a:focus {
+    color: $primary-color !important;
+  }
 }
 
 @media (max-width: 768px) {
   .navbar-default .navbar-header .navbar-brand {
-    color: rgb(29, 161, 242);
+    color: $primary-color;
   }
 }
 
-.navbar-default.affix .navbar-header .navbar-brand {
-  text-transform: none;
-  color: rgb(29, 161, 242);
-}
-
-.navbar-default.affix .navbar-header .navbar-brand:hover,
-.navbar-default.affix .navbar-header .navbar-brand:focus {
-  color: rgb(14, 80, 121);
-}
-
-.navbar-default.affix .nav > li > a:hover,
-.navbar-default.affix .nav > li > a:focus:hover {
-  color: rgb(29, 161, 242);
-}
-
-.navbar-default.affix .nav > li > a:hover,
-.navbar-default.affix .nav > li > a:focus:hover {
-  color: rgb(29, 161, 242);
-}
-
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
-  color: rgb(29, 161, 242) !important;
-}
-
 .bg-colored {
-  background-color: rgb(29, 161, 242);
+  background-color: $primary-color;
   color: white;
-}
+  a {
+    color: white;
+  }
 
-.bg-colored a {
-  color: white;
-}
+  a:hover,
+  a:focus:hover {
+    color: white;
+  }
 
-.bg-colored a:hover,
-.bg-colored a:focus:hover {
-  color: white;
-}
+  hr {
+    border-color: white;
+  }
 
-.bg-colored hr {
-  border-color: white;
-}
+  .text-primary {
+    color: white;
+  }
 
-.bg-colored .text-primary {
-  color: white;
-}
+  .text-muted {
+    color: $weak-color;
+  }
 
-.bg-colored .text-muted {
-  color: rgba(255, 255, 255, 0.8);
-}
+  .btn-primary {
+    background-color: white;
+    border-color: white;
+    color: $primary-color;
+  }
 
-.bg-colored .btn-primary {
-  background-color: white;
-  border-color: white;
-  color: rgb(29, 161, 242);
-}
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary.focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open > .dropdown-toggle.btn-primary {
+    color: white;
+    border-color: $dark-color;
+    background-color: $dark-color;
+  }
 
-.bg-colored .btn-primary:hover,
-.bg-colored .btn-primary:focus,
-.bg-colored .btn-primary.focus,
-.bg-colored .btn-primary:active,
-.bg-colored .btn-primary.active,
-.bg-colored .open > .dropdown-toggle.btn-primary {
-  color: white;
-  border-color: rgb(14, 80, 121);
-  background-color: rgb(14, 80, 121);
-}
+  code {
+    color: white;
+    background: none;
+  }
 
-.bg-colored .feature-box p {
-  color: rgba(255, 255, 255, 0.8);
-}
+  .feature-box p {
+    color: $weak-color;
 
-.bg-colored .feature-box p a {
-  color: rgba(255, 255, 255, 0.8);
-}
+    a {
+      color: $weak-color;
+    }
 
-.bg-colored .feature-box p a:hover,
-.bg-colored .feature-box p a:focus:hover {
-  color: white;
-}
+    a:hover,
+    a:focus:hover {
+      color: white;
+    }
 
-.bg-colored code {
-  color: white;
-  background: none;
-}
-
-.bg-colored .feature-box p code {
-  color: rgba(255, 255, 255, 0.8);
+    code {
+      color: $weak-color;
+    }
+  }
 }
 
 .bg-dark {
-  background-color: rgb(14, 80, 121);
+  background-color: $dark-color;
   color: white;
+
+  a {
+    color: $dark-link-color;
+  }
+
+  h3 a,
+  h5 a {
+    color: white;
+  }
+
+  code {
+    background-color: $dark-code-bg-color;
+    color: white;
+  }
+
+  hr {
+    border-color: white;
+  }
+
+  .text-primary {
+    color: white;
+  }
+
+  .text-muted {
+    color: white;
+  }
 }
 
-.bg-dark a {
-  color: rgb(142, 208, 249);
-}
+img{
+  &.portrait {
+    width: 128px;
+    border-radius: 64px;
+  }
 
-.bg-dark h3 a,
-.bg-dark h5 a {
-  color: white;
-}
-
-.bg-dark code {
-  background-color: rgb(7, 60, 80);
-  color: white;
-}
-
-.bg-dark hr {
-  border-color: white;
-}
-
-.bg-dark .text-primary {
-  color: white;
-}
-
-.bg-dark .text-muted {
-  color: white;
-}
-
-img.portrait {
-  width: 128px;
-  border-radius: 64px;
-}
-
-img.sponsor {
-  width: 256px;
+  &.sponsor {
+    width: 256px;
+  }
 }
 
 #features .container:not(:first-child):not(:nth-child(2)) {
@@ -247,12 +260,14 @@ img.sponsor {
   margin-bottom: 0;
 }
 
-.table > tbody > tr > th {
-  vertical-align: middle;
-}
+.table>tbody>tr{
+  &>th {
+    vertical-align: middle;
+  }
 
-.table > tbody > tr > td {
-  text-align: left;
+  &>td {
+    text-align: left;
+  }
 }
 
 .panel-default .panel-heading {
