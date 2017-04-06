@@ -42,10 +42,14 @@
     - time: "22:05"
       name: LT
     - time: "22:10"
-      title: SwiftのOptional型を極める（2017年版）
+      title: SwiftのOptionalのベストプラクティス
       tweeterId: koher
       description: |
-        Coming soon
+        2年程前、 Qiita に[『SwiftのOptional型を極める』](http://qiita.com/koher/items/c6f446bad54442a28bf4)という投稿をしました。内容は、 `Optional` とは何かという説明と、 `Optional` のベストプラクティスを合わせたようなものでした。
+
+        しかし、 Swift 1 だった当時と比べると状況が大きく変わり、特にベストプラクティスの部分が適切ではなくなってきました。また、 Swift の経験値も蓄積され、新たな知見も多く得られました。
+
+        そこで、 Swift 3.1 時点での `Optional` 周りを整理し、いつ・どのように `Optional` を使うべきか、 `Optional` に関するベストプラクティスを説明します。
     - time: "22:40"
       name: 休憩
     - time: "22:45"
