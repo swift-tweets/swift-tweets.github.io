@@ -24,10 +24,9 @@
   schedule:
     - time: "21:00"
       name: "オープニング"
-    - time: "21:05"
-      name: LT
     - time: "21:10"
-      name: LT
+      title: "Vapor as a web framework"
+      tweeterId: rb_de0
     - time: "21:15"
       title: "Swift 4では何が変わりそうなのか"
       tweeterId: d_date
@@ -37,12 +36,11 @@
         Swift 3 への移行も一段落したところですが、今年は Swift 4 へのバージョンアップが予定されています。 Swift Evolution を始め、どのような機能が含まれるのか、日々議論がなされていますが、具体的にどのような変更が入るのか、ここで一度みなさんで見てみましょう。日頃メーリスを読んで、バッチリな方も、 Swift 4 のことはまだ全然キャッチアップできていない方も、一緒に Swift のこれからの話をしましょう。
     - time: "21:45"
       name: ディスカッション
-    - time: "21:55"
-      name: 休憩
     - time: "22:00"
-      name: LT
+      name: 休憩
     - time: "22:05"
-      name: LT
+      title: "Swift Standard Library相関図"
+      tweeterId: S_Shimotori_pub
     - time: "22:10"
       title: SwiftのOptionalのベストプラクティス
       tweeterId: koher
@@ -52,14 +50,14 @@
         しかし、 Swift 1 だった当時と比べると状況が大きく変わり、特にベストプラクティスの部分が適切ではなくなってきました。また、 Swift の経験値も蓄積され、新たな知見も多く得られました。
 
         そこで、 Swift 3.1 時点での `Optional` 周りを整理し、いつ・どのように `Optional` を使うべきか、 `Optional` に関するベストプラクティスを説明します。
-    - time: "22:40"
-      name: 休憩
     - time: "22:45"
-      name: LT
+      name: 休憩
     - time: "22:50"
-      name: LT
+      title: "モックを「差し込む方法」を考える"
+      tweeterId: hironytic
     - time: "22:55"
-      name: LT
+      title: "Swiftで、ビデオ通話実装してみた"
+      tweeterId: nanamoto7483
     - time: "23:00"
       name: "クロージング"
 2017-winter:
