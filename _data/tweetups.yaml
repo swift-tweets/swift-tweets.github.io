@@ -1,3 +1,59 @@
+2017-summer:
+  title: "Swift Tweets 2017 Summer"
+  shortTitle: "2017 Summer"
+  lastId: 2017-spring
+  hashtag: "swtws"
+  date: "2017-07-22"
+  dayOfWeek: "SAT"
+  time: "21:00"
+  timezone: "JST"
+  entryLink: "https://swift-tweets.connpass.com/event/55313/"
+  contact:
+    twitterId: koher
+    email: koher@koherent.org
+  sponsors: []
+  tweeters:
+    - id: 1024jp
+      icon: https://pbs.twimg.com/profile_images/723566478247649281/q-Vljb8v.jpg
+      profile: |
+        Coming soon
+    - id: koher
+      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+      profile: |
+        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+    - id: rintaro
+      icon: https://pbs.twimg.com/profile_images/21214722/dragon.png
+      profile: |
+        Coming soon
+    - id: takasek
+      icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC.jpg
+      profile: |
+        Coming soon
+  schedule:
+    - time: "21:00"
+      name: "オープニング"
+    - time: "TBD"
+      title: "CotEditorとSwiftについて（仮）"
+      tweeterId: 1024jp
+      description: |
+        Coming soon
+    - time: "TBD"
+      title: "Swiftコンパイラとオープンソース活動について（仮）"
+      tweeterId: rintaro
+      description: |
+        Coming soon
+    - time: "TBD"
+      title: "Swiftの型システムについて（仮）"
+      tweeterId: takasek
+      description: |
+        Coming soon
+    - time: "TBD"
+      title: "未定"
+      tweeterId: koher
+      description: |
+        Coming soon
+    - time: "23:00"
+      name: "クロージング"
 2017-spring:
   title: "Swift Tweets 2017 Spring"
   shortTitle: "2017 Spring"
