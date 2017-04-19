@@ -1,14 +1,81 @@
-- hashtag: "swtws"
+2017-spring:
+  title: "Swift Tweets 2017 Spring"
+  shortTitle: "2017 Spring"
+  lastId: 2017-winter
+  hashtag: "swtws"
+  date: "2017-04-15"
+  dayOfWeek: "SAT"
+  time: "21:00"
+  timezone: "JST"
+  entryLink: "https://swift-tweets.connpass.com/event/48887/"
+  contact:
+    twitterId: koher
+    email: koher@koherent.org
+  sponsors: []
+  tweeters:
+    - id: d_date
+      icon: https://pbs.twimg.com/profile_images/839327159340584960/1t9Wsw-N.jpg
+      profile: |
+        フリーランスでエンジニアをしています。 MRC の時代から iOS アプリの開発を行っていて、最近は [Realm News の日本語への翻訳](https://realm.io/jp/news/)や、[英語の勉強会](https://clem.connpass.com)の運営もしています。よく使うアーキテクチャは MVC です。
+    - id: koher
+      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+      profile: |
+        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+  schedule:
+    - time: "21:00"
+      name: "オープニング"
+    - time: "21:10"
+      title: "Vapor as a web framework"
+      tweeterId: rb_de0
+    - time: "21:15"
+      title: "Swift 4では何が変わりそうなのか"
+      tweeterId: d_date
+      description: |
+        Swift のバージョンアップは既存の API を使いやすく、美しくしてくれますが、痛みを伴うことが多いものとなっています。特に 2016 年は Swift 2.2 から 3.0 へのバージョンアップにより、その痛みを身を持って体験されたかと思います。また、 Xcode 8.3 から Swift 2.3 のサポートも終了し、 Swift 3 への移行を強いられることとなりました。
+
+        Swift 3 への移行も一段落したところですが、今年は Swift 4 へのバージョンアップが予定されています。 Swift Evolution を始め、どのような機能が含まれるのか、日々議論がなされていますが、具体的にどのような変更が入るのか、ここで一度みなさんで見てみましょう。日頃メーリスを読んで、バッチリな方も、 Swift 4 のことはまだ全然キャッチアップできていない方も、一緒に Swift のこれからの話をしましょう。
+    - time: "21:45"
+      name: ディスカッション
+    - time: "22:00"
+      name: 休憩
+    - time: "22:05"
+      title: "Swift Standard Library相関図"
+      tweeterId: S_Shimotori_pub
+    - time: "22:10"
+      title: SwiftのOptionalのベストプラクティス
+      tweeterId: koher
+      description: |
+        2年程前、 Qiita に[『SwiftのOptional型を極める』](http://qiita.com/koher/items/c6f446bad54442a28bf4)という投稿をしました。内容は、 `Optional` とは何かという説明と、 `Optional` のベストプラクティスを合わせたようなものでした。
+
+        しかし、 Swift 1 だった当時と比べると状況が大きく変わり、特にベストプラクティスの部分が適切ではなくなってきました。また、 Swift の経験値も蓄積され、新たな知見も多く得られました。
+
+        そこで、 Swift 3.1 時点での `Optional` 周りを整理し、いつ・どのように `Optional` を使うべきか、 `Optional` に関するベストプラクティスを説明します。
+    - time: "22:45"
+      name: 休憩
+    - time: "22:50"
+      title: "モックを「差し込む方法」を考える"
+      tweeterId: hironytic
+    - time: "22:55"
+      title: "Swiftで、ビデオ通話実装してみた"
+      tweeterId: nanamoto7483
+    - time: "23:00"
+      name: "クロージング"
+2017-winter:
+  title: "Swift Tweets 2017 Winter"
+  shortTitle: "2017 Winter"
+  hashtag: "swtws"
   date: "2017-01-14"
   dayOfWeek: "SAT"
   time: "22:00"
-  freeTalkingTime: "24:35"
-  closingTime: "24:55"
   timezone: "JST"
   entryLink: "https://swift-tweets.connpass.com/event/45878/"
   contact:
     twitterId: koher
     email: koher@koherent.org
+  sponsors:
+    - id: "qiita"
+      name: "Qiita"
+      link: "http://qiita.com/"
   tweeters:
     - id: _mono
       icon: https://pbs.twimg.com/profile_images/476454722593771520/goSBw3js.png
@@ -26,7 +93,9 @@
       icon: https://pbs.twimg.com/profile_images/677005712497713152/X_2Mf8gO.jpg
       profile: |
         「たるのんだよ。すいふとをかくけど、おぶじぇしいもかくよ。」博多で Swift 書いてます。 `associatedtype` でガチガチに固めたコードを渡すと喜びます。 [GitHub はこちら](http://github.com/tarunon/)。
-  talks:
+  schedule:
+    - time: "22:00"
+      name: "オープニング"
     - time: "22:05"
       title: Swift時代に悩ましいUIViewControllerをどう扱うか
       tweeterId: susieyy
@@ -79,3 +148,11 @@
     - time: "24:30"
       title: "Clean Architecture 開発ツールの話"
       tweeterId: yhirose741
+    - time: "24:35"
+      name: "フリートーク"
+      description: |
+        発表内容やその他 Swift について、自由にツイートする時間です。普段は、いきなりメンションツイートで何かを質問したり意見を聞いたりすることは難しいと思いますが、この時間はオフラインの懇親会のように自由に交流して下さい。
+
+        Swift Tweets の参加者一覧は[こちら](https://swift-tweets.connpass.com/event/45878/)です。
+    - time: "24:55"
+      name: "クロージング"
