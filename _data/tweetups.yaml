@@ -28,7 +28,7 @@
     - id: takasek
       icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC.jpg
       profile: |
-        フリーランスエンジニア、ほぼ[FiNC](https://finc.com/)。Swiftのおかげで型と設計が好きになり、方々の勉強会に参加しては発表駆動学習を試みている👉[Qiita](http://qiita.com/takasek),[SpeakerDeck](https://speakerdeck.com/takasek)。イチオシの自作OSSは、target/actionをクロージャに置き換える[ActionClosurable](https://github.com/takasek/ActionClosurable)。
+        フリーランスエンジニア、ほぼ [FiNC](https://finc.com/) 。 Swift のおかげで型と設計が好きになり、方々の勉強会に参加しては発表駆動学習を試みている👉 [Qiita](http://qiita.com/takasek), [SpeakerDeck](https://speakerdeck.com/takasek) 。イチオシの自作 OSS は、 target/action をクロージャに置き換える [ActionClosurable](https://github.com/takasek/ActionClosurable) 。
   schedule:
     - time: "21:00"
       name: "オープニング"
