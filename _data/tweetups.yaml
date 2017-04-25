@@ -22,9 +22,9 @@
       profile: |
         [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
     - id: rintaro
-      icon: https://pbs.twimg.com/profile_images/21214722/dragon.png
+      icon: https://pbs.twimg.com/profile_images/856741178774925312/KZTozYoo.jpg
       profile: |
-        Coming soon
+        Swift で開発したい Web エンジニア。なかなか仕事で Swift 書けないけどコンパイラの仕組みを勉強したいと思い、ソース見てたらいつの間にかPR投げまくるようになって今に至る。オープンソース化前は [Stack Overflow で遊んでた](http://stackoverflow.com/users/3804019/rintaro)。
     - id: takasek
       icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC.jpg
       profile: |
