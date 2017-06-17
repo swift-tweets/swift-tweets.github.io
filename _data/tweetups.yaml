@@ -43,12 +43,12 @@
       description: |
         Coming soon
     - time: "TBD"
-      title: "Swiftの型システムについて（仮）"
+      title: "Swiftに息づくstructural types"
       tweeterId: takasek
       description: |
         Coming soon
     - time: "TBD"
-      title: "未定"
+      title: "純粋値型Swift"
       tweeterId: koher
       description: |
         Coming soon
