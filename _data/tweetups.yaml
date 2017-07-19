@@ -50,7 +50,11 @@
       title: "Swiftに息づくstructural types"
       tweeterId: takasek
       description: |
-        Coming soon
+        プログラミング言語における型には、二種類の区分があります。 nominal type （名前的型・型名の宣言が明示的に行われる）と structural type （構造的型・名前はただのエイリアス）です。
+
+        Swift は多くの型を nominal type として扱っています。以前発表した ["What is a nominal type?"](https://speakerdeck.com/takasek/what-is-a-nominal-type) というスライドでは、 nominal type が意図しない型の同一視を防ぐために有用であることを示しました。
+
+        では反対に、 structural type として扱われている関数型やタプル型は、なぜ nominal ではないのでしょうか。それらの型の活用例や、そこから見えてくる nominal type system の弱点や限界について、 ["型システム入門 −プログラミング言語と型の理論−"](https://www.amazon.co.jp/dp/4274069117) を参照しながら探ります。
     - time: "TBD"
       title: "純粋値型Swift"
       tweeterId: koher
