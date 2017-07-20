@@ -33,10 +33,14 @@
     - time: "21:00"
       name: "オープニング"
     - time: "TBD"
-      title: "CotEditorとSwiftについて（仮）"
+      title: "CotEditor を Swift に移行する"
       tweeterId: 1024jp
       description: |
-        Coming soon
+        2004 年から脈々と受け継がれる総 Cocoa 製の macOS 用テキストエディタ [CotEditor](https://coteditor.com) は、昨年 2016 年に Objective-C から Swift に 100% 移行しました。
+        
+        Swift は魅力的な言語ですが、すでに Objective-C で 10 年超動いてるアプリケーションを誰に頼まれたわけでもないのにわざわざ Swift で書き直す意味は果たしてあるのでしょうか？
+        
+        そこそこの規模の GUI アプリケーションを OSS 活動として実際にひとりで Swift に書き換えること、またコードが Swift になったことによる開発上の変化についてを、CotEditor の現開発者としてお話しします。
     - time: "TBD"
       title: "実践Swiftコンパイラ"
       tweeterId: rintaro
