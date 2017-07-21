@@ -32,16 +32,16 @@
   schedule:
     - time: "21:00"
       name: "オープニング"
-    - time: "TBD"
+    - time: "21:10"
       title: "CotEditor を Swift に移行する"
       tweeterId: 1024jp
       description: |
         2004 年から脈々と受け継がれる総 Cocoa 製の macOS 用テキストエディタ [CotEditor](https://coteditor.com) は、昨年 2016 年に Objective-C から Swift に 100% 移行しました。
-        
+
         Swift は魅力的な言語ですが、すでに Objective-C で 10 年超動いてるアプリケーションを誰に頼まれたわけでもないのにわざわざ Swift で書き直す意味は果たしてあるのでしょうか？
-        
+
         そこそこの規模の GUI アプリケーションを OSS 活動として実際にひとりで Swift に書き換えること、またコードが Swift になったことによる開発上の変化についてを、CotEditor の現開発者としてお話しします。
-    - time: "TBD"
+    - time: "21:35"
       title: "実践Swiftコンパイラ"
       tweeterId: rintaro
       description: |
@@ -50,7 +50,9 @@
         Swift コンパイラがオープンソース化されて結構な時間が経ちますが、まだまだ実際にコントリビュートしている人は少ない様です。コンパイラは私たちがいつも使っている道具の核です。その道具をより良くしていく努力に理由など必要無いはず。
 
         コンパイラは C++ で実装されていますが、バグを修正する程度の変更に C++ の知識はほとんど必要ありません。この発表によって少しでも「案外簡単な」コンパイラへのコントリビュートに興味をもっていただければと思います。
-    - time: "TBD"
+    - time: "22:00"
+      name: "休憩"
+    - time: "22:10"
       title: "Swiftに息づくstructural types"
       tweeterId: takasek
       description: |
@@ -59,7 +61,7 @@
         Swift は多くの型を nominal type として扱っています。以前発表した ["What is a nominal type?"](https://speakerdeck.com/takasek/what-is-a-nominal-type) というスライドでは、 nominal type が意図しない型の同一視を防ぐために有用であることを示しました。
 
         では反対に、 structural type として扱われている関数型やタプル型は、なぜ nominal ではないのでしょうか。それらの型の活用例や、そこから見えてくる nominal type system の弱点や限界について、 ["型システム入門 −プログラミング言語と型の理論−"](https://www.amazon.co.jp/dp/4274069117) を参照しながら探ります。
-    - time: "TBD"
+    - time: "22:35"
       title: "純粋値型Swift"
       tweeterId: koher
       description: |
