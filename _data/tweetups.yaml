@@ -1,3 +1,56 @@
+2017-fall:
+  title: "Swift Tweets 2017 Fall"
+  shortTitle: "2017 Fall"
+  lastId: 2017-summer
+  hashtag: "swtws"
+  date: "2017-10-21（仮）"
+  dayOfWeek: "SAT"
+  time: "21:00"
+  timezone: "JST"
+  entryLink: "https://swift-tweets.connpass.com/event/62883/"
+  contact:
+    twitterId: koher
+    email: koher@koherent.org
+  sponsors: []
+  tweeters:
+    - id: giginet
+      icon: https://pbs.twimg.com/profile_images/661494673949626368/QFTlXVZQ_400x400.png
+      profile: |
+        Coming soon
+    - id: koher
+      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+      profile: |
+        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+    - id: omochimetaru
+      icon: https://pbs.twimg.com/profile_images/448177563051913216/Tcox9dud_400x400.png
+      profile: |
+        Coming soon
+  schedule:
+    - time: "21:00"
+      name: "オープニング"
+    - time: "21:10"
+      title: "Swiftとゲーム開発について（仮）"
+      tweeterId: giginet
+      description: |
+        Coming soon
+    - time: "21:35"
+      title: "Ownershipについて（仮）"
+      tweeterId: omochimetaru
+      description: |
+        Coming soon
+    - time: "22:00"
+      name: "休憩"
+    - time: "22:10"
+      title: "Coming soon"
+      tweeterId: koher
+      description: |
+        Coming soon
+    - time: "22:35"
+      name: "Coming soon"
+      description: |
+        Coming soon
+    - time: "23:00"
+      name: "クロージング"
 2017-summer:
   title: "Swift Tweets 2017 Summer"
   shortTitle: "2017 Summer"
