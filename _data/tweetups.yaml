@@ -1,3 +1,77 @@
+2017-summer:
+  title: "Swift Tweets 2017 Summer"
+  shortTitle: "2017 Summer"
+  lastId: 2017-spring
+  hashtag: "swtws"
+  date: "2017-07-22"
+  dayOfWeek: "SAT"
+  time: "21:00"
+  timezone: "JST"
+  entryLink: "https://swift-tweets.connpass.com/event/55313/"
+  contact:
+    twitterId: koher
+    email: koher@koherent.org
+  sponsors: []
+  tweeters:
+    - id: 1024jp
+      icon: https://pbs.twimg.com/profile_images/723566478247649281/q-Vljb8v.jpg
+      profile: |
+        余暇時間にせっせと開発をするホビー開発者。 macOS アプリケーション専門。 2014 年から [CotEditor](https://coteditor.com) の開発を引き継いでいる。 OSS プロジェクト運営からコーディング、アイコンのデザインまで、 macOS のアプリケーション開発に関わることなら全部やるマンである。
+    - id: koher
+      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+      profile: |
+        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+    - id: rintaro
+      icon: https://pbs.twimg.com/profile_images/856741178774925312/KZTozYoo.jpg
+      profile: |
+        Swift で開発したい Web エンジニア。なかなか仕事で Swift 書けないけどコンパイラの仕組みを勉強したいと思い、ソース見てたら[いつの間にか PR 投げまくるようになって今に至る](https://github.com/apple/swift/commits?author=rintaro)。オープンソース化前は [Stack Overflow で遊んでた](http://stackoverflow.com/users/3804019/rintaro)。
+    - id: takasek
+      icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC.jpg
+      profile: |
+        フリーランスエンジニア、ほぼ [FiNC](https://finc.com/) 。 Swift のおかげで型と設計が好きになり、方々の勉強会に参加しては発表駆動学習を試みている👉 [Qiita](http://qiita.com/takasek), [SpeakerDeck](https://speakerdeck.com/takasek) 。イチオシの自作 OSS は、 target/action をクロージャに置き換える [ActionClosurable](https://github.com/takasek/ActionClosurable) 。
+  schedule:
+    - time: "21:00"
+      name: "オープニング"
+    - time: "21:10"
+      title: "CotEditor を Swift に移行する"
+      tweeterId: 1024jp
+      description: |
+        2004 年から脈々と受け継がれる総 Cocoa 製の macOS 用テキストエディタ [CotEditor](https://coteditor.com) は、昨年 2016 年に Objective-C から Swift に 100% 移行しました。
+
+        Swift は魅力的な言語ですが、すでに Objective-C で 10 年超動いてるアプリケーションを誰に頼まれたわけでもないのにわざわざ Swift で書き直す意味は果たしてあるのでしょうか？
+
+        そこそこの規模の GUI アプリケーションを OSS 活動として実際にひとりで Swift に書き換えること、またコードが Swift になったことによる開発上の変化についてを、CotEditor の現開発者としてお話しします。
+    - time: "21:35"
+      title: "実践Swiftコンパイラ"
+      tweeterId: rintaro
+      description: |
+        この発表では、実際に Swift コンパイラのバグを修正し、プルリクエストを投げるまでの手続きを実践してみます。
+
+        Swift コンパイラがオープンソース化されて結構な時間が経ちますが、まだまだ実際にコントリビュートしている人は少ない様です。コンパイラは私たちがいつも使っている道具の核です。その道具をより良くしていく努力に理由など必要無いはず。
+
+        コンパイラは C++ で実装されていますが、バグを修正する程度の変更に C++ の知識はほとんど必要ありません。この発表によって少しでも「案外簡単な」コンパイラへのコントリビュートに興味をもっていただければと思います。
+    - time: "22:00"
+      name: "休憩"
+    - time: "22:10"
+      title: "Swiftに息づくstructural types"
+      tweeterId: takasek
+      description: |
+        プログラミング言語の型システムは、その型の同定やサブタイピングの方法に注目したとき、 nominal type system / structural type system の二種類に区分することができます。 nominal type system においては型名の宣言が明示的に行われた場合にのみ同じ型あるいはサブタイプと見做されますが、 structural type system では型名はただのエイリアスです。
+
+        Swift は多くの型を nominal type として扱っています。以前発表した ["What is a nominal type?"](https://speakerdeck.com/takasek/what-is-a-nominal-type) というスライドでは、 nominal type が意図しない型の同一視を防ぐために有用であることを示しました。
+
+        では反対に、 structural type として扱われている関数型やタプル型は、なぜ nominal ではないのでしょうか。それらの型の活用例や、そこから見えてくる nominal type system の弱点や限界について、 ["型システム入門 −プログラミング言語と型の理論−"](https://www.amazon.co.jp/dp/4274069117) を参照しながら探ります。
+    - time: "22:35"
+      title: "純粋値型Swift"
+      tweeterId: koher
+      description: |
+        Swift は値型を中心とした言語です。この発表では、仮に参照型を使わずに値型だけを使った場合、 Swift でどれだけのことができるかを探ります。
+
+        Swift が登場した当初、僕は Swift が値型を中心としていることに戸惑いました。参照型でないとできないことは色々あるし、世の中は値型でも参照型に見せかける方向に動いていると思っていたからです。しかし、 Swift を使うにつれて、値型だけでできることは当初考えていたよりもずっと幅広いことがわかってきました。また、値型の特性を活かすことで、参照型では面倒なケースでコードを簡潔に保てることもわかってきました。
+
+        Swift が最も利用されている iOS アプリ開発では、 UIKit 等の Objective-C 由来の Framework に引っ張られて参照型中心のプログラミングになってしまうことが多いと思います。そのため、せっかく値型中心の言語なのに Swift で値型中心のプログラミングをするための知見は十分に広まっていないように思います。この発表を通して、多くの人に値型中心でプログラミングをすることに対して興味を持っていただければと思います。
+    - time: "23:00"
+      name: "クロージング"
 2017-spring:
   title: "Swift Tweets 2017 Spring"
   shortTitle: "2017 Spring"
