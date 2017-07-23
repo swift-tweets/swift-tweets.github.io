@@ -25,6 +25,10 @@
       icon: https://pbs.twimg.com/profile_images/448177563051913216/Tcox9dud_400x400.png
       profile: |
         Coming soon
+    - id: taketo1024
+      icon: https://pbs.twimg.com/profile_images/472096985596436480/N2gO6T3b_400x400.png
+      profile: |
+        Coming soon
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -41,12 +45,13 @@
     - time: "22:00"
       name: "休憩"
     - time: "22:10"
-      title: "Coming soon"
-      tweeterId: koher
+      title: "Swiftと数学について（仮）"
+      tweeterId: taketo1024
       description: |
         Coming soon
     - time: "22:35"
-      name: "Coming soon"
+      title: "Swift 4の何かについて（仮）"
+      tweeterId: koher
       description: |
         Coming soon
     - time: "23:00"
