@@ -13,10 +13,6 @@
     email: koher@koherent.org
   sponsors: []
   tweeters:
-    - id: giginet
-      icon: https://pbs.twimg.com/profile_images/661494673949626368/QFTlXVZQ_400x400.png
-      profile: |
-        Coming soon
     - id: koher
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
@@ -33,25 +29,22 @@
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
-      title: "Swiftとゲーム開発について（仮）"
-      tweeterId: giginet
+      title: "Proposalには載っていないSwift 5のasync/awaitが素晴らしいと思う理論的背景"
+      tweeterId: koher
       description: |
-        Coming soon
-    - time: "21:35"
+        Swift プログラマは長年に渡り非同期処理の辛さを強いられてきました。しかし去る 8 月、ついに Chris Lattner から `async/await` が[提案されました](https://gist.github.com/lattner/429b9070918248274f25b714dcfc7619)。この `async/await` は C# や JavaScript のものをそのまま輸入したわけではなく、 Swift にフィットするように変更が加えられています。
+
+        実は、僕は[ほぼ同じ内容の提案をしようと準備をしていました](https://gist.github.com/koher/3e04b4f1b8adbbf0379d38c0ad83a3ea)。しかし、内容はほぼ同じものの、 Chris Lattner の Proposal には僕がなぜこの形の `async/await` が Swift にフィットすると考えたのかと同じような説明は書かれていませんでした。本発表では、僕がこのような `async/await` が適していると考えた理論的背景を説明することで、提案された `async/await` の素晴らしさについて補足することを目指します。
+    - time: "21:50"
+      name: "休憩"
+    - time: "22:00"
       title: "Ownershipについて（仮）"
       tweeterId: omochimetaru
       description: |
         Coming soon
-    - time: "22:00"
-      name: "休憩"
-    - time: "22:10"
+    - time: "22:30"
       title: "Swiftと数学について（仮）"
       tweeterId: taketo1024
-      description: |
-        Coming soon
-    - time: "22:35"
-      title: "Swift 4の何かについて（仮）"
-      tweeterId: koher
       description: |
         Coming soon
     - time: "23:00"
