@@ -38,10 +38,16 @@
     - time: "21:50"
       name: "休憩"
     - time: "22:00"
-      title: "Ownershipについて（仮）"
+      title: "Ownershipの紹介"
       tweeterId: omochimetaru
       description: |
-        Coming soon
+        Swift はネイティブコンパイルや値型など、高速な動作を意識して設計されています。しかし、 CPU の性能を活かしきるコードを書くには機能が足りていません。
+
+        コアチームは、その不足している機能郡のうち、あるカテゴリに属するものをまとめて Ownership という名前をつけ、今後の対応方針を文書化しました。
+
+        その文書は [Ownership Manifesto](https://github.com/apple/swift/blob/master/docs/OwnershipManifesto.md) といいます。これには今後の対応予定が示されていますが、すでに Swift に実装されている部分もあります。
+
+        この発表では、この文書にもとづいて、Swiftの Ownership 機能を紹介します。
     - time: "22:30"
       title: "Swiftと数学について（仮）"
       tweeterId: taketo1024
