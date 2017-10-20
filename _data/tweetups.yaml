@@ -49,10 +49,12 @@
 
         この発表では、この文書にもとづいて、Swiftの Ownership 機能を紹介します。
     - time: "22:30"
-      title: "Swiftと数学について（仮）"
+      title: "Swift で √2 を作ろう"
       tweeterId: taketo1024
       description: |
-        Coming soon
+        数学における代数構造を `protocol` として、対応する集合を `struct` として実装することで、数学の理論に忠実なコードを Protocol Oriented に作ることができます。この発表では数学の専門知識を仮定せずに、群・環・体の定義から「代数拡大で√2を作る話」まで、コードを元に解説していきます。数学に自信ない方でも Swift で数学を作る楽しさを感じて頂けたら幸いです。
+
+        ※ iOSDC で発表した[「Swift で数学のススメ」](https://www.slideshare.net/taketo1024/swift-79828803)のコードレベルの解説となります。
     - time: "23:00"
       name: "クロージング"
 2017-summer:
