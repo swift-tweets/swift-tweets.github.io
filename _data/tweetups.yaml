@@ -29,15 +29,6 @@
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
-      title: "Proposalには載っていないSwift 5のasync/awaitが素晴らしいと思う理論的背景"
-      tweeterId: koher
-      description: |
-        Swift プログラマは長年に渡り非同期処理の辛さを強いられてきました。しかし去る 8 月、ついに Chris Lattner から `async/await` が[提案されました](https://gist.github.com/lattner/429b9070918248274f25b714dcfc7619)。この `async/await` は C# や JavaScript のものをそのまま輸入したわけではなく、 Swift にフィットするように変更が加えられています。
-
-        実は、僕は[ほぼ同じ内容の提案をしようと準備をしていました](https://gist.github.com/koher/3e04b4f1b8adbbf0379d38c0ad83a3ea)。しかし、内容はほぼ同じものの、 Chris Lattner の Proposal には僕がなぜこの形の `async/await` が Swift にフィットすると考えたのかと同じような説明は書かれていませんでした。本発表では、僕がこのような `async/await` が適していると考えた理論的背景を説明することで、提案された `async/await` の素晴らしさについて補足することを目指します。
-    - time: "21:50"
-      name: "休憩"
-    - time: "22:00"
       title: "Ownershipの紹介"
       tweeterId: omochimetaru
       description: |
@@ -48,7 +39,7 @@
         その文書は [Ownership Manifesto](https://github.com/apple/swift/blob/master/docs/OwnershipManifesto.md) といいます。これには今後の対応予定が示されていますが、すでに Swift に実装されている部分もあります。
 
         この発表では、この文書にもとづいて、Swiftの Ownership 機能を紹介します。
-    - time: "22:30"
+    - time: "22:40"
       title: "Swift で √2 を作ろう"
       tweeterId: taketo1024
       description: |
@@ -57,6 +48,15 @@
         この発表では数学の専門知識を仮定せずに、群・環・体の定義から「代数拡大で√2を作る話」まで、コードを元に解説していきます。数学に自信ない方でも Swift で数学を作る楽しさを感じて頂けたら幸いです。
 
         ※ iOSDC で発表した[「Swift で数学のススメ」](https://www.slideshare.net/taketo1024/swift-79828803)のコードレベルの解説となります。
+    - time: "22:10"
+      name: "休憩"
+    - time: "22:20"
+      title: "Proposalには載っていないSwift 5のasync/awaitが素晴らしいと思う理論的背景"
+      tweeterId: koher
+      description: |
+        Swift プログラマは長年に渡り非同期処理の辛さを強いられてきました。しかし去る 8 月、ついに Chris Lattner から `async/await` が[提案されました](https://gist.github.com/lattner/429b9070918248274f25b714dcfc7619)。この `async/await` は C# や JavaScript のものをそのまま輸入したわけではなく、 Swift にフィットするように変更が加えられています。
+
+        実は、僕は[ほぼ同じ内容の提案をしようと準備をしていました](https://gist.github.com/koher/3e04b4f1b8adbbf0379d38c0ad83a3ea)。しかし、内容はほぼ同じものの、 Chris Lattner の Proposal には僕がなぜこの形の `async/await` が Swift にフィットすると考えたのかと同じような説明は書かれていませんでした。本発表では、僕がこのような `async/await` が適していると考えた理論的背景を説明することで、提案された `async/await` の素晴らしさについて補足することを目指します。
     - time: "23:00"
       name: "クロージング"
 2017-summer:
