@@ -183,7 +183,7 @@
                           <tr>
                             <th>{{ talk.time }}</th>
                             <td>
-                              <h4>{% if talk.name %}{{ talk.name }}{% else %}"{{ talk.title }}"{% endif %}</h4>
+                              <h4>{% if talk.name %}{{ talk.name }}{% else %}{%if talk.url %}<a href="{{talk.url}}">{% endif %}"{{ talk.title }}"{%if talk.url %}</a>{% endif %}{% endif %}</h4>
                               {% if talk.tweeterId %}<h5><a href="https://twitter.com/{{ talk.tweeterId }}">@{{ talk.tweeterId }}</a></h5>{% endif %}
                               {% if talk.description %}<p>{{ talk.description | markdownify }}</p>{% endif %}
                             </td>

@@ -1,3 +1,66 @@
+2017-fall:
+  title: "Swift Tweets 2017 Fall"
+  shortTitle: "2017 Fall"
+  lastId: 2017-summer
+  hashtag: "swtws"
+  date: "2017-10-21"
+  dayOfWeek: "SAT"
+  time: "21:00"
+  timezone: "JST"
+  entryLink: "https://swift-tweets.connpass.com/event/62883/"
+  contact:
+    twitterId: koher
+    email: koher@koherent.org
+  sponsors: []
+  tweeters:
+    - id: koher
+      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+      profile: |
+        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+    - id: omochimetaru
+      icon: https://pbs.twimg.com/profile_images/448177563051913216/Tcox9dud_400x400.png
+      profile: |
+        いろいろなプログラミング言語について横断的に議論するのが好き。その中でも Swift は 1 世代先を行っていると思っていて、一番やっていっている。最近は [Discord](https://medium.com/swift-column/discord-ios-20d586e373c0) での話し相手を増やすべく、勧誘をしている。
+    - id: taketo1024
+      icon: https://pbs.twimg.com/profile_images/472096985596436480/N2gO6T3b_400x400.png
+      profile: |
+        元 iOS エンジニア、現数学専攻の大学院生。数学科卒業後、 9 年間ベンチャー企業から大手 IT 企業まで渡り歩き、再び大学院に戻って数学を志す。[「プログラマのための数学勉強会」](https://maths4pg.connpass.com/)主催。
+  schedule:
+    - time: "21:00"
+      name: "オープニング"
+    - time: "21:10"
+      title: "Ownershipの紹介"
+      url: "https://qiita.com/omochimetaru/items/c5f0eabde516e4713367"
+      tweeterId: omochimetaru
+      description: |
+        Swift はネイティブコンパイルや値型など、高速な動作を意識して設計されています。しかし、 CPU の性能を活かしきるコードを書くには機能が足りていません。
+
+        コアチームは、その不足している機能郡のうち、あるカテゴリに属するものをまとめて Ownership という名前をつけ、今後の対応方針を文書化しました。
+
+        その文書は [Ownership Manifesto](https://github.com/apple/swift/blob/master/docs/OwnershipManifesto.md) といいます。これには今後の対応予定が示されていますが、すでに Swift に実装されている部分もあります。
+
+        この発表では、この文書にもとづいて、Swiftの Ownership 機能を紹介します。
+    - time: "22:40"
+      title: "Swift で √2 を作ろう"
+      tweeterId: taketo1024
+      description: |
+        数学における代数構造を `protocol` として、対応する集合を `struct` として実装することで、数学の理論に忠実なコードを Protocol Oriented に作ることができます。
+
+        この発表では数学の専門知識を仮定せずに、群・環・体の定義から「代数拡大で√2を作る話」まで、コードを元に解説していきます。数学に自信ない方でも Swift で数学を作る楽しさを感じて頂けたら幸いです。
+
+        ※ iOSDC で発表した[「Swift で数学のススメ」](https://www.slideshare.net/taketo1024/swift-79828803)のコードレベルの解説となります。
+    - time: "22:10"
+      name: "休憩"
+    - time: "22:20"
+      title: "Proposalには載っていないSwift 5のasync/awaitが素晴らしいと思う理論的背景"
+      url: "https://qiita.com/koher/items/29357b5e00aec1962601"
+      tweeterId: koher
+      description: |
+        Swift プログラマは長年に渡り非同期処理の辛さを強いられてきました。しかし去る 8 月、ついに Chris Lattner から `async/await` が[提案されました](https://gist.github.com/lattner/429b9070918248274f25b714dcfc7619)。この `async/await` は C# や JavaScript のものをそのまま輸入したわけではなく、 Swift にフィットするように変更が加えられています。
+
+        実は、僕は[ほぼ同じ内容の提案をしようと準備をしていました](https://gist.github.com/koher/3e04b4f1b8adbbf0379d38c0ad83a3ea)。しかし、内容はほぼ同じものの、 Chris Lattner の Proposal には僕がなぜこの形の `async/await` が Swift にフィットすると考えたのかと同じような説明は書かれていませんでした。本発表では、僕がこのような `async/await` が適していると考えた理論的背景を説明することで、提案された `async/await` の素晴らしさについて補足することを目指します。
+    - time: "23:00"
+      name: "クロージング"
 2017-summer:
   title: "Swift Tweets 2017 Summer"
   shortTitle: "2017 Summer"
@@ -34,6 +97,7 @@
       name: "オープニング"
     - time: "21:10"
       title: "CotEditor を Swift に移行する"
+      url: "https://qiita.com/1024jp/items/ef79bfb6ba9823adddcc"
       tweeterId: 1024jp
       description: |
         2004 年から脈々と受け継がれる総 Cocoa 製の macOS 用テキストエディタ [CotEditor](https://coteditor.com) は、昨年 2016 年に Objective-C から Swift に 100% 移行しました。
@@ -43,6 +107,7 @@
         そこそこの規模の GUI アプリケーションを OSS 活動として実際にひとりで Swift に書き換えること、またコードが Swift になったことによる開発上の変化についてを、CotEditor の現開発者としてお話しします。
     - time: "21:35"
       title: "実践Swiftコンパイラ"
+      url: "https://qiita.com/rintaro/items/e762d2a52c26a0be9fdc"
       tweeterId: rintaro
       description: |
         この発表では、実際に Swift コンパイラのバグを修正し、プルリクエストを投げるまでの手続きを実践してみます。
@@ -54,6 +119,7 @@
       name: "休憩"
     - time: "22:10"
       title: "Swiftに息づくstructural types"
+      url: "https://qiita.com/takasek/items/c15ef7ce5a00e65a4ad2"
       tweeterId: takasek
       description: |
         プログラミング言語の型システムは、その型の同定やサブタイピングの方法に注目したとき、 nominal type system / structural type system の二種類に区分することができます。 nominal type system においては型名の宣言が明示的に行われた場合にのみ同じ型あるいはサブタイプと見做されますが、 structural type system では型名はただのエイリアスです。
@@ -63,6 +129,7 @@
         では反対に、 structural type として扱われている関数型やタプル型は、なぜ nominal ではないのでしょうか。それらの型の活用例や、そこから見えてくる nominal type system の弱点や限界について、 ["型システム入門 −プログラミング言語と型の理論−"](https://www.amazon.co.jp/dp/4274069117) を参照しながら探ります。
     - time: "22:35"
       title: "純粋値型Swift"
+      url: "https://qiita.com/koher/items/0745415a8b9842563ea7"
       tweeterId: koher
       description: |
         Swift は値型を中心とした言語です。この発表では、仮に参照型を使わずに値型だけを使った場合、 Swift でどれだけのことができるかを探ります。
@@ -103,6 +170,7 @@
       tweeterId: rb_de0
     - time: "21:15"
       title: "Swift 4では何が変わりそうなのか"
+      url: "https://qiita.com/d_date/items/b3562f542afc306791ce"
       tweeterId: d_date
       description: |
         Swift のバージョンアップは既存の API を使いやすく、美しくしてくれますが、痛みを伴うことが多いものとなっています。特に 2016 年は Swift 2.2 から 3.0 へのバージョンアップにより、その痛みを身を持って体験されたかと思います。また、 Xcode 8.3 から Swift 2.3 のサポートも終了し、 Swift 3 への移行を強いられることとなりました。
@@ -117,6 +185,7 @@
       tweeterId: S_Shimotori_pub
     - time: "22:10"
       title: SwiftのOptionalのベストプラクティス
+      url: "https://qiita.com/koher/items/8b6156c8263b9b23c43c"
       tweeterId: koher
       description: |
         2年程前、 Qiita に[『SwiftのOptional型を極める』](http://qiita.com/koher/items/c6f446bad54442a28bf4)という投稿をしました。内容は、 `Optional` とは何かという説明と、 `Optional` のベストプラクティスを合わせたようなものでした。
@@ -172,6 +241,7 @@
       name: "オープニング"
     - time: "22:05"
       title: Swift時代に悩ましいUIViewControllerをどう扱うか
+      url: "https://qiita.com/susieyy/items/bf39c5769d8d4a56bb9b"
       tweeterId: susieyy
       description: |
         iOS アプリ開発において `UIViewController` は画面のライフルサイクルや遷移を担う中心的な存在ですが、悩ましい課題もいくつか孕んでいます。そんな `UIViewController` を Swift を活用して課題に立ち向かってみます。
@@ -179,6 +249,7 @@
         今回ご紹介する方法が一般的により優れているということではなくアプリの要件、開発規模、チームメンバー構成、設計方針により適応できるかどうかはケース・バイ・ケースになると思うので開発の選択肢の１つとして捉えていただけると幸いです。
     - time: "22:35"
       title: Swiftのエラー4分類が素晴らしすぎるのでみんなに知ってほしい
+      url: "https://qiita.com/koher/items/a7a12e7e18d2bb7d8c77"
       tweeterId: koher
       description: |
         Swift Core Team がエラー処理について言語設計時に考察した ["Error Handling Rationale and Proposal"](https://github.com/apple/swift/blob/master/docs/ErrorHandlingRationale.rst) というドキュメントがあります。その中で、プログラミングにおけるエラーが次の四つに分類されています。
@@ -191,10 +262,12 @@
         考えれば考えるほど、この分類が本質的で素晴らしい、 Swift に限らないものだとわかってきました。 Swift を書く上でエラーをどう設計すれば良いのか、 Java の検査例外はなぜ失敗したのか、多くの言語のエラー処理機構には何が足りないのか、この分類を通して考えたことを紹介します。
     - time: "23:05"
       title: Swiftの型の限界を超える
+      url: "https://qiita.com/tarunon/items/e3fd01b02a199747eb5e"
       tweeterId: tarunon
       description: Swift で `associatedtype` や Generics を駆使してプログラムを書いているとしばしば壁に打ち当たることがあると思います。気持ちよくコードを書いていたが、コンパイルが通らなくなってしまう。思い描いていた美しい世界が実現できずに悔しい思いをしたことはないでしょうか。このセッションでは、僕が Swift 3.0 以降で見つけた幾つかの「壁」と、それを超えるための Workaround を、コンパイルが通らなくなる原因とともに解説していきたいと思います。
     - time: "23:35"
       title: "SwiftのString(文字列) APIとの付き合い方"
+      url: "https://qiita.com/mono0926/items/139014be6c15e32b9696"
       tweeterId: _mono
       description: |
         Swift の String (文字列) API は、文字列の概念を厳密に扱うようになっており良くできています。その反面、難しい・取っつきにくい・普段取り扱う際に不便、など気になる点もあります。そんな Swift の String API とどのように付き合っていけば良いだろうか、という考察をしていきます。
