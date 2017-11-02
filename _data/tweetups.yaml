@@ -86,6 +86,7 @@
         この発表では、この文書にもとづいて、Swiftの Ownership 機能を紹介します。
     - time: "22:40"
       title: "Swift で √2 を作ろう"
+      url: "https://togetter.com/li/1163526"
       tweeterId: taketo1024
       description: |
         数学における代数構造を `protocol` として、対応する集合を `struct` として実装することで、数学の理論に忠実なコードを Protocol Oriented に作ることができます。
