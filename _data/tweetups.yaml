@@ -23,12 +23,8 @@
         [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
     - id: takasek
       icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC_400x400.jpg
-      profile: |
-        Coming soon
     - id: hiragram
       icon: https://pbs.twimg.com/profile_images/790358777669103616/ekasI88Y_400x400.jpg
-      profile: |
-        Coming soon
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -40,10 +36,10 @@
     - time: "21:40"
       name: "休憩"
     - time: "21:45"
-      title: "Coming soon"
+      title: "Swift Foundationにコントリビュートする"
       tweeterId: takasek
     - time: "21:55"
-      title: "Coming soon"
+      title: "iOSじゃないところでSwiftを使う"
       tweeterId: hiragram
     - time: "22:05"
       name: "休憩"
