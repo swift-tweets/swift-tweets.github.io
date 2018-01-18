@@ -44,11 +44,8 @@
     - time: "22:05"
       name: "休憩"
     - time: "22:10"
-      title: "Coming soon"
+      title: "世界をプログラミングで満たしたい"
       tweeterId: koher
-      name: "Coming soon"
-      description: |
-        Coming soon.
     - time: "22:50"
       name: "クロージング"
 2017-fall:
