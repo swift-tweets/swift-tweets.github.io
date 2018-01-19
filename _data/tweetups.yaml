@@ -16,7 +16,7 @@
     - id: ikesyo
       icon: https://pbs.twimg.com/profile_images/650531959152574464/RuR-d-4B_400x400.jpg
       profile: |
-        Coming soon
+        Swift (corelibs-foundation) contributor. [Himotoki](https://github.com/ikesyo/Himotoki)/[Carthage](https://github.com/Carthage/Carthage)/[ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift)のコミッター。 京都の[はてな](http://www.hatena.ne.jp/)でiOS/Androidアプリエンジニアやってます。
     - id: koher
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
@@ -29,10 +29,12 @@
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
-      title: "Coming soon"
+      title: "どうやってSwiftのOSSをメンテナンスしていくか"
       tweeterId: ikesyo
       description: |
-        Coming soon.
+        OSSを公開すること自体は簡単ですが、それをきちんとメンテナンスしていくことは意外と大変です。ましてやSwiftのような若い言語では、毎年のバージョンアップにも追従していく必要があります。
+
+        Swift製のOSSにたくさん首を突っ込んでいる立場から、どのようにプロジェクトに貢献していくのか、メンテナンスをしていくのか、ということについて実体験から得た知見を共有したいと思います。
     - time: "21:40"
       name: "休憩"
     - time: "21:45"
