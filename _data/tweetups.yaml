@@ -21,6 +21,14 @@
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
         [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+    - id: S_Shimotori
+      icon: https://pbs.twimg.com/profile_images/813245377663012865/Jamck_qy_400x400.jpg
+    - id: amarillons
+      icon: https://pbs.twimg.com/profile_images/913192634411229184/69eFuPDI_400x400.jpg
+    - id: fumiyasac
+      icon: https://pbs.twimg.com/profile_images/612594250258120704/uyKDpKOn_400x400.jpg
+    - id: hironytic
+      icon: https://pbs.twimg.com/profile_images/902030434900467714/4_UrnG-l_400x400.jpg
   schedule:
     - time: "21:00"
       name: "オープニング"
