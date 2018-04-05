@@ -16,7 +16,7 @@
     - id: k_katsumi
       icon: https://pbs.twimg.com/profile_images/938253364877434880/AFvicwis_400x400.jpg
       profile: |
-        Coming soon
+        Freelance iOS/macOS developer. [https://github.com/kishikawakatsumi](https://github.com/kishikawakatsumi)
     - id: koher
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
@@ -27,28 +27,42 @@
       icon: https://pbs.twimg.com/profile_images/913192634411229184/69eFuPDI_400x400.jpg
     - id: fumiyasac
       icon: https://pbs.twimg.com/profile_images/612594250258120704/uyKDpKOn_400x400.jpg
+      profile: |
+        アプリのUI実装が好きな元デザイナーからジョブチェンジをしたエンジニア。QiitaやGithubなどでもUI実装に関するサンプルや解説記事を投稿したり、Swift愛好会をはじめとする勉強会等でもたまに登壇しています。アイデアを練る時はもっぱら手書き派です。
     - id: hironytic
       icon: https://pbs.twimg.com/profile_images/902030434900467714/4_UrnG-l_400x400.jpg
   schedule:
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
+      title: "Swift 4.1のConditional Conformanceとジェネリクスの未来"
+      tweeterId: koher
+      description: |
+        Coming soon.
+    - time: "21:40"
+      name: "休憩"
+    - time: "21:45"
+      title: "Coming soon"
+      tweeterId: amarillons
+    - time: "21:55"
+      title: "Coming soon"
+      tweeterId: S_Shimotori
+    - time: "22:05"
+      name: "休憩"
+    - time: "22:10"
+      title: "UIを作る際にライブラリにする？それともDIYする？の切り分けと実装のアイデア帳"
+      tweeterId: fumiyasac
+    - time: "22:20"
+      title: "！なことっ 知っとこな！"
+      tweeterId: Hiron
+    - time: "22:30"
+      name: "休憩"
+    - time: "22:35"
       title: "Coming soon"
       tweeterId: k_katsumi
       description: |
         Coming soon.
-    - time: "21:40"
-      title: "Coming soon"
-      tweeterId: koher
-      description: |
-        Coming soon.
-    - time: "22:10"
-      name: "休憩"
-    - time: "22:20"
-      name: "Coming soon"
-      description: |
-        Coming soon.
-    - time: "22:50"
+    - time: "23:05"
       name: "クロージング"
 2018-winter:
   title: "Swift Tweets 2018 Winter"
