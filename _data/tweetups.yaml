@@ -16,7 +16,7 @@
     - id: k_katsumi
       icon: https://pbs.twimg.com/profile_images/938253364877434880/AFvicwis_400x400.jpg
       profile: |
-        Coming soon
+        Software enginner @FOLIO (prev @Realm). 自転車とキャンプが趣味です。
     - id: koher
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
@@ -58,7 +58,7 @@
     - time: "22:30"
       name: "休憩"
     - time: "22:35"
-      title: "Coming soon"
+      title: "Swift Playgroundを作ろう"
       tweeterId: k_katsumi
       description: |
         Coming soon.
