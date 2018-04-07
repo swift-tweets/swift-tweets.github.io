@@ -42,7 +42,7 @@
     - time: "21:40"
       name: "休憩"
     - time: "21:45"
-      title: "Coming soon"
+      title: "Swift 4.1で導入されたcompactMapとその背景について"
       tweeterId: amarillons
     - time: "21:55"
       title: "QuickとXCTestと"
