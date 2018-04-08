@@ -38,7 +38,15 @@
       title: "Swift 4.1のConditional Conformanceとジェネリクスの未来"
       tweeterId: koher
       description: |
-        Coming soon.
+        先日 Swift 4.1 がリリースされました。 Swift 4.1 の最大の変更はなんといっても [Conditional Conformance](https://github.com/apple/swift-evolution/blob/master/proposals/0143-conditional-conformances.md) です。本発表では、
+
+        - Conditional Conformance とは何か
+        - Conditional Conformance は何の役に立つのか
+        - Conditional Conformance が標準ライブラリに与える影響の例
+
+        について説明します。
+
+        また、 Conditional Conformance は [Generics Manifesto](https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md) に示された変更の一つです。これまでにジェネリクスに加えられた変更と Generics Manifesto の内容を元にして、僕の考える Swift のジェネリクスの方向性と未来について話します。
     - time: "21:40"
       name: "休憩"
     - time: "21:45"
