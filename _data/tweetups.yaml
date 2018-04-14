@@ -47,25 +47,25 @@
         について説明します。
 
         また、 Conditional Conformance は [Generics Manifesto](https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md) に示された変更の一つです。これまでにジェネリクスに加えられた変更と Generics Manifesto の内容を元にして、僕の考える Swift のジェネリクスの方向性と未来について話します。
-    - time: "21:40"
+    - time: "21:55"
       name: "休憩"
-    - time: "21:45"
+    - time: "22:00"
       title: "Swift 4.1で導入されたcompactMapとその背景について"
       tweeterId: amarillons
-    - time: "21:55"
+    - time: "22:10"
       title: "QuickとXCTestと"
       tweeterId: S_Shimotori
-    - time: "22:05"
+    - time: "22:20"
       name: "休憩"
-    - time: "22:10"
+    - time: "22:25"
       title: "UIを作る際にライブラリにする？それともDIYする？の切り分けと実装のアイデア帳"
       tweeterId: fumiyasac
-    - time: "22:20"
+    - time: "22:35"
       title: "！なことっ 知っとこな！"
       tweeterId: Hiron
-    - time: "22:30"
+    - time: "22:45"
       name: "休憩"
-    - time: "22:35"
+    - time: "22:50"
       title: "Swift Playgroundを作ろう"
       tweeterId: k_katsumi
       description: |
@@ -84,7 +84,7 @@
         
         repl.itやWandboxなど、Swiftをサポートする同様のサービスもありますが、Swiftは変化の早いプログラミング言語です。残念ながらサポートするバージョンが古かったり、うまく動かないことの方がまだ多いようです。
         しかし、自分でセットアップするぶんにはまだリリースされてない最新のスナップショットを使用することもできます！
-    - time: "23:05"
+    - time: "23:20"
       name: "クロージング"
 2018-winter:
   title: "Swift Tweets 2018 Winter"
