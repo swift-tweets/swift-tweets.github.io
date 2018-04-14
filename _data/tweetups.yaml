@@ -1,3 +1,47 @@
+2018-summer:
+  title: "Swift Tweets 2018 Summer"
+  shortTitle: "2018 Summer"
+  lastId: 2018-spring
+  hashtag: "swtws"
+  date: "2018-07-14"
+  dayOfWeek: "SAT"
+  time: "21:00"
+  timezone: "JST"
+  entryLink: "https://swift-tweets.connpass.com/event/84462/"
+  contact:
+    twitterId: koher
+    email: koher@koherent.org
+  sponsors: []
+  tweeters:
+    - id: ukitaka_
+      icon: https://pbs.twimg.com/profile_images/889301082844876802/ZoVAsW5A_400x400.jpg
+      profile: |
+        Coming soon
+    - id: koher
+      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+      profile: |
+        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+  schedule:
+    - time: "21:00"
+      name: "オープニング"
+    - time: "21:10"
+      title: "Coming soon"
+      tweeterId: ukitaka_
+      description: |
+        Coming soon.
+    - time: "21:40"
+      title: "Coming soon"
+      tweeterId: koher
+      description: |
+        Coming soon.
+    - time: "22:10"
+      name: "休憩"
+    - time: "22:20"
+      name: "Coming soon"
+      description: |
+        Coming soon.
+    - time: "22:50"
+      name: "クロージング"
 2018-spring:
   title: "Swift Tweets 2018 Spring"
   shortTitle: "2018 Spring"
