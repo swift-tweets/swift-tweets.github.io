@@ -69,7 +69,21 @@
       title: "Swift Playgroundを作ろう"
       tweeterId: k_katsumi
       description: |
-        Coming soon.
+        SwiftでJSFiddleのような、オンラインでいろいろなコードを試せるPlaygroundを作りましょう。
+        重たいXcodeを起動しなくてもブラウザでサッと書いてすぐにコードを実行して結果を確認できます。
+        問題のあるコードを複数人で実行結果を確認しながら議論できます。
+
+        他にも、自分の作ったフレームワーク（それがLinux環境でも動作するのなら）のデモンストレーションとしても最適です。
+        
+        実際に活用している例として、私が公開しているSwift Power AssertやSwiftfmtの動作をインストールしなくてもWebで簡単に試せるライブデモとして公開しています。
+        
+        [https://swift-power-assert.kishikawakatsumi.com/](https://swift-power-assert.kishikawakatsumi.com/)
+        [https://swiftfmt.kishikawakatsumi.com/](https://swiftfmt.kishikawakatsumi.com/)
+        
+        実行結果を画面ではなくJSONで返すWeb APIにすれば、チャットに投稿したコードを実行して結果を返すBotを作ることもできます。オンラインで議論したりするときに非常に便利です。このBotはiOS開発者が集うDiscordサーバーで実際に運用されており、当初の思惑を大きく超えて活発な議論に大いに役立っています。
+        
+        repl.itやWandboxなど、Swiftをサポートする同様のサービスもありますが、Swiftは変化の早いプログラミング言語です。残念ながらサポートするバージョンが古かったり、うまく動かないことの方がまだ多いようです。
+        しかし、自分でセットアップするぶんにはまだリリースされてない最新のスナップショットを使用することもできます！
     - time: "23:05"
       name: "クロージング"
 2018-winter:
