@@ -95,17 +95,21 @@
       name: "休憩"
     - time: "22:00"
       title: "Swift 4.1で導入されたcompactMapとその背景について"
+      url: "https://qiita.com/amarillons/items/e897ca495470963249fe"
       tweeterId: amarillons
     - time: "22:10"
       title: "QuickとXCTestと"
+      url: "https://qiita.com/S_Shimotori/items/197c89913fe60e234381"
       tweeterId: S_Shimotori_pub
     - time: "22:20"
       name: "休憩"
     - time: "22:25"
       title: "UIを作る際にライブラリにする？それともDIYする？の切り分けと実装のアイデア帳"
+      url: "https://qiita.com/fumiyasac@github/items/144aec1e1726500d9d5a"
       tweeterId: fumiyasac
     - time: "22:35"
       title: "！なことっ 知っとこな！"
+      url: "https://qiita.com/hironytic/items/0ca33b2c0415cdd38aff"
       tweeterId: hironytic
     - time: "22:45"
       name: "休憩"
