@@ -16,7 +16,7 @@
     - id: ukitaka_
       icon: https://pbs.twimg.com/profile_images/889301082844876802/ZoVAsW5A_400x400.jpg
       profile: |
-        Coming soon
+        コンパイラや型システムをSwiftを使って勉強している博多在住のソフトウェアエンジニアです。
     - id: koher
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
@@ -25,10 +25,10 @@
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
-      title: "Coming soon"
+      title: "Swiftの型システムにおけるサブタイピングの定義と実装"
       tweeterId: ukitaka_
       description: |
-        Coming soon.
+        Swiftの型システムには他の言語にはみられないような特徴がいくつかあり、それによって言語としての使いやすさが支えられています。 今回は特にサブタイピングに焦点をあってて、どんな規則があり、それがどのように実装されているかを解説してみたいと思います。
     - time: "21:40"
       title: "Coming soon"
       tweeterId: koher
