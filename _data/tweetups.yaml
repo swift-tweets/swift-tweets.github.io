@@ -27,8 +27,8 @@
       icon: https://pbs.twimg.com/profile_images/976839992541630464/X-qNourh_200x200.jpg
     - id: orga_chem
       icon: https://pbs.twimg.com/profile_images/378800000251552195/5b54e030a12bb39e4219ab8ba442a810_200x200.png
-    - id: t.ae
-      icon: https://connpass-tokyo.s3.amazonaws.com/thumbs/7a/76/7a7618cd6ffd36fb9a918ac2b8526a58.png
+    - id: ar_t_ae
+      icon: https://pbs.twimg.com/profile_images/1013708936405344257/k4yo_gTw_400x400.jpg
   schedule:
     - time: "21:00"
       name: "オープニング"
