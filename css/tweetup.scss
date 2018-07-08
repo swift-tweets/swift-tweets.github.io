@@ -125,13 +125,6 @@ header {
     }
   }
 
-  &.affix-top {
-      .navbar-nav > li.dropdown.open > a.dropdown-toggle {
-          color: $primary-color;
-          background-color: white;
-      }
-  }
-
   .nav > li > a:hover,
   .nav > li > a:focus:hover,
   .nav > li.active > a,
@@ -167,11 +160,16 @@ header {
 
 @media (min-width: 768px) {
     .navbar-default {
-        &.affix-top .nav > li {
-            > a:hover,
-            > a:focus,
-            > a:focus:hover {
-                color: white !important;
+        &.affix-top .nav.navbar-nav {
+            > li {
+                > a:hover,
+                > a:focus:hover {
+                    color: white !important;
+                }
+            }
+            > li.dropdown.open > a.dropdown-toggle {
+                color: $primary-color !important;
+                background-color: white;
             }
         }
         .nav > li.dropdown {
