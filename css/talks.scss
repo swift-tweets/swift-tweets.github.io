@@ -1,0 +1,31 @@
+---
+---
+
+@import "color";
+
+#tweeters {
+    .container:not(:first-child):not(:nth-child(2)) {
+      margin-top: 40px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+body {
+    padding-top: 50px;
+}
+
+.tweeter {
+  max-width: 400px;
+  margin: 50px auto 0;
+  p {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .tweeter {
+    margin: 50px auto 0;
+  }
+}

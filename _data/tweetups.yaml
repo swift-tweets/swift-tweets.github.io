@@ -21,14 +21,6 @@
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
         [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: shmdevelop
-      icon: https://pbs.twimg.com/profile_images/758511396443131905/XYxiqSMR_200x200.jpg
-    - id: el_hrhm
-      icon: https://pbs.twimg.com/profile_images/976839992541630464/X-qNourh_200x200.jpg
-    - id: orga_chem
-      icon: https://pbs.twimg.com/profile_images/378800000251552195/5b54e030a12bb39e4219ab8ba442a810_200x200.png
-    - id: ar_t_ae
-      icon: https://pbs.twimg.com/profile_images/1013708936405344257/k4yo_gTw_400x400.jpg
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -79,16 +71,6 @@
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
         [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: S_Shimotori_pub
-      icon: https://pbs.twimg.com/profile_images/813245377663012865/Jamck_qy_400x400.jpg
-    - id: amarillons
-      icon: https://pbs.twimg.com/profile_images/913192634411229184/69eFuPDI_400x400.jpg
-    - id: fumiyasac
-      icon: https://pbs.twimg.com/profile_images/612594250258120704/uyKDpKOn_400x400.jpg
-      profile: |
-        アプリのUI実装が好きな元デザイナーからジョブチェンジをしたエンジニア。QiitaやGithubなどでもUI実装に関するサンプルや解説記事を投稿したり、Swift愛好会をはじめとする勉強会等でもたまに登壇しています。アイデアを練る時はもっぱら手書き派です。
-    - id: hironytic
-      icon: https://pbs.twimg.com/profile_images/902030434900467714/4_UrnG-l_400x400.jpg
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -171,10 +153,6 @@
       icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
       profile: |
         [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: takasek
-      icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC_400x400.jpg
-    - id: hiragram
-      icon: https://pbs.twimg.com/profile_images/953906605422141440/it-UnoHc_400x400.jpg
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -198,6 +176,8 @@
     - time: "22:10"
       title: "世界をプログラミングで満たしたい"
       tweeterId: koher
+      description: |
+        -
     - time: "22:50"
       name: "クロージング"
 2017-fall:

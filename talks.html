@@ -1,0 +1,74 @@
+---
+layout: common
+css:
+  - talks
+---
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="/">Swift Tweets</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="talks.html">トーク一覧</a>
+                </li>
+                <li>
+                    <a href="index.html#contact">連絡先</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+{% assign tweeters = '' | split: '' %}
+{% for tweetupId in site.data.tweetup_ids %}
+    {% assign tweeters = tweeters | concat: site.data.tweetups[tweetupId].tweeters %}
+{% endfor %}
+{% assign tweeterIds = tweeters | sort: 'id' | map: 'id' | uniq %}
+<section id="tweeters">
+    <div class="container">
+        <div class="row">
+{% for tweeterId in tweeterIds %}
+    {% for aTweeter in tweeters %}
+        {% if aTweeter.id == tweeterId %}
+            {% assign tweeter = aTweeter %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+            <div class="col-lg-6 col-sm-12 text-center">
+                <div class="tweeter">
+                    <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />
+                    <h3><a href="https://twitter.com/{{ tweeter.id }}">@{{ tweeter.id }}</a></h3>
+                    {{ tweeter.profile | markdownify }}
+                    <hr class="primary">
+                    <ul class="list-group">
+                    {% for tweetupId in site.data.tweetup_ids %}
+                    {% assign tweetup = site.data.tweetups[tweetupId] %}
+                    {% for talk in tweetup.schedule %}
+                    {% unless talk.description %}{% continue %}{% endunless %}
+                    {% if talk.tweeterId == tweeterId %}
+                        <li class="list-group-item">
+                            {% assign talkTitle = talk.title | escape %}
+                            {% assign talkDescription = talk.description | markdownify | strip_newlines | join: '' | escape %}
+                            <h4><a data-toggle="popover" data-placement="top" title="{{ talkTitle }}" data-content="{{ talkDescription }}">{{ talk.title }}</a>{%if talk.url %} <a href="{{ talk.url }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}</h4>
+                            <p class="text-muted">{{ tweetup.shortTitle }}</p>
+                        </li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+{% endfor %}
+        </div>
+    </div>
+</section>
