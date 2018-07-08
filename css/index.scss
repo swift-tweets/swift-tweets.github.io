@@ -125,16 +125,53 @@ header {
     }
   }
 
+  &.affix-top {
+      .navbar-nav > li.dropdown.open > a.dropdown-toggle {
+          color: $primary-color;
+          background-color: white;
+      }
+  }
+
   .nav > li.active > a,
   .nav > li.active > a:focus {
     color: $primary-color !important;
   }
+
+  .nav > li.dropdown > .dropdown-menu {
+      box-shadow: none;
+      border-radius: 0;
+      border-color: rgba(34, 34, 34, 0.05);
+
+      &> li > a {
+          font-weight: 700;
+
+          &:hover {
+              color: $primary-color;
+          }
+      }
+  }
 }
 
-@media (max-width: 768px) {
-  .navbar-default .navbar-header .navbar-brand {
-    color: $primary-color;
+@media (max-width: 767px) {
+  .navbar-default {
+      .navbar-header .navbar-brand {
+        color: $primary-color;
+      }
+      .nav > li.dropdown {
+          display: none;
+      }
   }
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        .nav > li.dropdown {
+            display: visible;
+        }
+        .nav > li.non-dropdown {
+            display: none;
+        }
+    }
 }
 
 .bg-colored {

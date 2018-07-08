@@ -136,14 +136,14 @@
         問題のあるコードを複数人で実行結果を確認しながら議論できます。
 
         他にも、自分の作ったフレームワーク（それがLinux環境でも動作するのなら）のデモンストレーションとしても最適です。
-        
+
         実際に活用している例として、私が公開しているSwift Power AssertやSwiftfmtの動作をインストールしなくてもWebで簡単に試せるライブデモとして公開しています。
-        
+
         [https://swift-power-assert.kishikawakatsumi.com/](https://swift-power-assert.kishikawakatsumi.com/)
         [https://swiftfmt.kishikawakatsumi.com/](https://swiftfmt.kishikawakatsumi.com/)
-        
+
         実行結果を画面ではなくJSONで返すWeb APIにすれば、チャットに投稿したコードを実行して結果を返すBotを作ることもできます。オンラインで議論したりするときに非常に便利です。このBotはiOS開発者が集うDiscordサーバーで実際に運用されており、当初の思惑を大きく超えて活発な議論に大いに役立っています。
-        
+
         repl.itやWandboxなど、Swiftをサポートする同様のサービスもありますが、Swiftは変化の早いプログラミング言語です。残念ながらサポートするバージョンが古かったり、うまく動かないことの方がまだ多いようです。
         しかし、自分でセットアップするぶんにはまだリリースされてない最新のスナップショットを使用することもできます！
     - time: "23:20"
@@ -174,7 +174,7 @@
     - id: takasek
       icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC_400x400.jpg
     - id: hiragram
-      icon: https://pbs.twimg.com/profile_images/790358777669103616/ekasI88Y_400x400.jpg
+      icon: https://pbs.twimg.com/profile_images/953906605422141440/it-UnoHc_400x400.jpg
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -224,7 +224,7 @@
       profile: |
         いろいろなプログラミング言語について横断的に議論するのが好き。その中でも Swift は 1 世代先を行っていると思っていて、一番やっていっている。最近は [Discord](https://medium.com/swift-column/discord-ios-20d586e373c0) での話し相手を増やすべく、勧誘をしている。
     - id: taketo1024
-      icon: https://pbs.twimg.com/profile_images/472096985596436480/N2gO6T3b_400x400.png
+      icon: https://pbs.twimg.com/profile_images/980463971143577600/UUef_Mrd_400x400.jpg
       profile: |
         元 iOS エンジニア、現数学専攻の大学院生。数学科卒業後、 9 年間ベンチャー企業から大手 IT 企業まで渡り歩き、再び大学院に戻って数学を志す。[「プログラマのための数学勉強会」](https://maths4pg.connpass.com/)主催。
   schedule:
@@ -358,7 +358,7 @@
   sponsors: []
   tweeters:
     - id: d_date
-      icon: https://pbs.twimg.com/profile_images/839327159340584960/1t9Wsw-N.jpg
+      icon: https://pbs.twimg.com/profile_images/895152875155935234/f9h5niTO_400x400.jpg
       profile: |
         フリーランスでエンジニアをしています。 MRC の時代から iOS アプリの開発を行っていて、最近は [Realm News の日本語への翻訳](https://realm.io/jp/news/)や、[英語の勉強会](https://clem.connpass.com)の運営もしています。よく使うアーキテクチャは MVC です。
     - id: koher
