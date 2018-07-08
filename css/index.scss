@@ -132,6 +132,8 @@ header {
       }
   }
 
+  .nav > li > a:hover,
+  .nav > li > a:focus:hover,
   .nav > li.active > a,
   .nav > li.active > a:focus {
     color: $primary-color !important;
@@ -165,6 +167,13 @@ header {
 
 @media (min-width: 768px) {
     .navbar-default {
+        &.affix-top .nav > li {
+            > a:hover,
+            > a:focus,
+            > a:focus:hover {
+                color: white !important;
+            }
+        }
         .nav > li.dropdown {
             display: visible;
         }
