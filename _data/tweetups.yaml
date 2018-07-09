@@ -38,6 +38,24 @@
       description: |
         Swiftの型システムには他の言語にはみられないような特徴がいくつかあり、それによって言語としての使いやすさが支えられています。 今回は特にサブタイピングに焦点をあってて、どんな規則があり、それがどのように実装されているかを解説してみたいと思います。
     - time: "21:40"
+      name: "休憩"
+    - time: "21:45"
+      title: "Coming soon"
+      tweeterId: shmdevelop
+    - time: "21:55"
+      title: "Coming soon"
+      tweeterId: el_hrhm
+    - time: "22:05"
+      name: "休憩"
+    - time: "22:10"
+      title: "Coming soon"
+      tweeterId: orga_chem
+    - time: "22:20"
+      title: "Swift4.2のRandom APIについて"
+      tweeterId: ar_t_ae
+    - time: "22:30"
+      name: "休憩"
+    - time: "22:35"
       title: "なぜSwiftのプロトコルはジェネリクスをサポートしないのか"
       tweeterId: koher
       description: |
@@ -48,13 +66,7 @@
         - ジェネリックなプロトコルなしにどのようにコードを書けばよいのか
 
         について説明します。
-    - time: "22:10"
-      name: "休憩"
-    - time: "22:20"
-      name: "Coming soon"
-      description: |
-        Coming soon.
-    - time: "22:50"
+    - time: "23:05"
       name: "クロージング"
 2018-spring:
   title: "Swift Tweets 2018 Spring"
