@@ -92,9 +92,8 @@ header {
   }
 }
 
-code {
-  background-color: $code-bg-color;
-  color: black;
+.navbar-fixed-top .navbar-collapse {
+    max-height: 352px;
 }
 
 .navbar-default {
