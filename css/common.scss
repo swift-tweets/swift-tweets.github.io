@@ -194,6 +194,10 @@ header {
     }
 }
 
+code {
+  background: $code-bg-color;
+}
+
 .bg-colored {
   background-color: $primary-color;
   color: white;
