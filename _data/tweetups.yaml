@@ -88,6 +88,8 @@
       name: "オープニング"
     - time: "21:10"
       title: "Swift 4.1のConditional Conformanceとジェネリクスの未来"
+      url: "https://qiita.com/koher/items/4ae98d71b8eb06ab1b79"
+      tweetsUrl: "https://twitter.com/koher/status/985127876507860993"
       tweeterId: koher
       description: |
         先日 Swift 4.1 がリリースされました。 Swift 4.1 の最大の変更はなんといっても [Conditional Conformance](https://github.com/apple/swift-evolution/blob/master/proposals/0143-conditional-conformances.md) です。本発表では、
@@ -104,25 +106,30 @@
     - time: "22:00"
       title: "Swift 4.1で導入されたcompactMapとその背景について"
       url: "https://qiita.com/amarillons/items/e897ca495470963249fe"
+      tweetsUrl: "https://twitter.com/amarillons/status/985147260689420288"
       tweeterId: amarillons
     - time: "22:10"
       title: "QuickとXCTestと"
       url: "https://qiita.com/S_Shimotori/items/197c89913fe60e234381"
+      tweetsUrl: "https://twitter.com/S_Shimotori_pub/status/985139027903840256"
       tweeterId: S_Shimotori_pub
     - time: "22:20"
       name: "休憩"
     - time: "22:25"
       title: "UIを作る際にライブラリにする？それともDIYする？の切り分けと実装のアイデア帳"
       url: "https://qiita.com/fumiyasac@github/items/144aec1e1726500d9d5a"
+      tweetsUrl: "https://twitter.com/fumiyasac/status/985143513502253056"
       tweeterId: fumiyasac
     - time: "22:35"
       title: "！なことっ 知っとこな！"
       url: "https://qiita.com/hironytic/items/0ca33b2c0415cdd38aff"
+      tweetsUrl: "https://twitter.com/hironytic/status/985163326530310146"
       tweeterId: hironytic
     - time: "22:45"
       name: "休憩"
     - time: "22:50"
       title: "Swift Playgroundを作ろう"
+      tweetsUrl: "https://twitter.com/k_katsumi/status/985166281153265664"
       tweeterId: k_katsumi
       description: |
         SwiftでJSFiddleのような、オンラインでいろいろなコードを試せるPlaygroundを作りましょう。
@@ -170,6 +177,7 @@
       name: "オープニング"
     - time: "21:10"
       title: "どうやってSwiftのOSSをメンテナンスしていくか"
+      tweetsUrl: "https://twitter.com/ikesyo/status/954687472369201155"
       tweeterId: ikesyo
       description: |
         OSSを公開すること自体は簡単ですが、それをきちんとメンテナンスしていくことは意外と大変です。ましてやSwiftのような若い言語では、毎年のバージョンアップにも追従していく必要があります。
@@ -179,14 +187,18 @@
       name: "休憩"
     - time: "21:45"
       title: "Swift Foundationにコントリビュートする"
+      url: "https://qiita.com/takasek/items/01f7746bf444bd5c85c0"
+      tweetsUrl: "https://twitter.com/takasek/status/954696314171740160"
       tweeterId: takasek
     - time: "21:55"
       title: "iOSじゃないところでSwiftを使う"
+      tweetsUrl: "https://twitter.com/hiragram/status/954699064855076864"
       tweeterId: hiragram
     - time: "22:05"
       name: "休憩"
     - time: "22:10"
       title: "世界をプログラミングで満たしたい"
+      tweetsUrl: "https://twitter.com/koher/status/954702886935527424"
       tweeterId: koher
       description: |
         -
