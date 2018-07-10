@@ -123,6 +123,10 @@ header {
     .nav > li > a:focus:hover {
       color: $primary-color;
     }
+
+    .nav > li.current > a {
+        color: $primary-color;
+    }
   }
 
   .nav > li > a:hover,

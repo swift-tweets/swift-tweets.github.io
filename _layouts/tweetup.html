@@ -40,12 +40,14 @@ css:
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">履歴 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="talks">トーク一覧</a></li>
                         {% for tweetupId in site.data.tweetupIds %}
                         <li{% if tweetupId == page.tweetupId %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
                 <li class="non-dropdown"><hr /></li>
+                <li class="non-dropdown"><a href="talks">トーク一覧</a></li>
                 {% for tweetupId in site.data.tweetupIds %}
                 <li class="non-dropdown{% if tweetupId == page.tweetupId %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
                 {% endfor %}
