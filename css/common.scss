@@ -132,17 +132,26 @@ header {
     color: $primary-color !important;
   }
 
-  .nav > li.dropdown > .dropdown-menu {
-      box-shadow: none;
-      border-radius: 0;
-      border-color: rgba(34, 34, 34, 0.05);
+  .nav {
+      &> li.dropdown > .dropdown-menu {
+          box-shadow: none;
+          border-radius: 0;
+          border-color: rgba(34, 34, 34, 0.05);
 
-      &> li > a {
-          font-weight: 700;
+          &> li > a {
+              font-weight: 700;
 
-          &:hover {
+              &:hover {
+                  color: $primary-color;
+              }
+          }
+
+          &> li.current > a {
               color: $primary-color;
           }
+      }
+      &> li.non-dropdown.current > a {
+          color: $primary-color;
       }
   }
 }

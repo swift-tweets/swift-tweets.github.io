@@ -39,13 +39,13 @@ css:
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">履歴 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         {% for tweetupId in site.data.tweetupIds %}
-                        <li><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
+                        <li{% if tweetupId == page.tweetupId %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
                 <li class="non-dropdown"><hr /></li>
                 {% for tweetupId in site.data.tweetupIds %}
-                <li class="non-dropdown"><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
+                <li class="non-dropdown{% if tweetupId == page.tweetupId %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
                 {% endfor %}
             </ul>
         </div>
