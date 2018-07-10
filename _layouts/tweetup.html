@@ -3,7 +3,12 @@ layout: common
 css:
   - tweetup
 ---
-{% assign tweetup = site.data.tweetups[page.tweetup_id] %}
+{% for a_tweetup in site.data.tweetups %}
+    {% if a_tweetup.id == page.tweetup_id %}
+        {% assign tweetup = a_tweetup %}
+        {% break %}
+    {% endif %}
+{% endfor %}
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,15 +46,15 @@ css:
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">履歴 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="talks">トーク一覧</a></li>
-                        {% for tweetup_id in site.data.tweetup_ids %}
-                        <li{% if tweetup_id == page.tweetup_id %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetup_id }}{% endif %}">{{ site.data.tweetups[tweetup_id].short_title }}</a></li>
+                        {% for tweetup in site.data.tweetups %}
+                        <li{% if tweetup.id == page.tweetup_id %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetup.id }}{% endif %}">{{ tweetup.short_title }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
                 <li class="non-dropdown"><hr /></li>
                 <li class="non-dropdown"><a href="talks">トーク一覧</a></li>
-                {% for tweetup_id in site.data.tweetup_ids %}
-                <li class="non-dropdown{% if tweetup_id == page.tweetup_id %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetup_id }}{% endif %}">{{ site.data.tweetups[tweetup_id].short_title }}</a></li>
+                {% for tweetup in site.data.tweetups %}
+                <li class="non-dropdown{% if tweetup.id == page.tweetup_id %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetup.id }}{% endif %}">{{ tweetup.short_title }}</a></li>
                 {% endfor %}
             </ul>
         </div>

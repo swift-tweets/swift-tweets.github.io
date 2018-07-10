@@ -1,4 +1,4 @@
-2018-summer:
+- id: 2018-summer
   title: "Swift Tweets 2018 Summer"
   short_title: "2018 Summer"
   hashtag: "swtws"
@@ -53,7 +53,7 @@
         について説明します。
     - time: "23:05"
       name: "クロージング"
-2018-spring:
+- id: 2018-spring
   title: "Swift Tweets 2018 Spring"
   short_title: "2018 Spring"
   hashtag: "swtws"
@@ -135,7 +135,7 @@
         しかし、自分でセットアップするぶんにはまだリリースされてない最新のスナップショットを使用することもできます！
     - time: "23:20"
       name: "クロージング"
-2018-winter:
+- id: 2018-winter
   title: "Swift Tweets 2018 Winter"
   short_title: "2018 Winter"
   hashtag: "swtws"
@@ -183,7 +183,7 @@
         -
     - time: "22:50"
       name: "クロージング"
-2017-fall:
+- id: 2017-fall
   title: "Swift Tweets 2017 Fall"
   short_title: "2017 Fall"
   hashtag: "swtws"
@@ -237,7 +237,7 @@
         実は、僕は[ほぼ同じ内容の提案をしようと準備をしていました](https://gist.github.com/koher/3e04b4f1b8adbbf0379d38c0ad83a3ea)。しかし、内容はほぼ同じものの、 Chris Lattner の Proposal には僕がなぜこの形の `async/await` が Swift にフィットすると考えたのかと同じような説明は書かれていませんでした。本発表では、僕がこのような `async/await` が適していると考えた理論的背景を説明することで、提案された `async/await` の素晴らしさについて補足することを目指します。
     - time: "23:00"
       name: "クロージング"
-2017-summer:
+- id: 2017-summer
   title: "Swift Tweets 2017 Summer"
   short_title: "2017 Summer"
   hashtag: "swtws"
@@ -302,7 +302,7 @@
         Swift が最も利用されている iOS アプリ開発では、 UIKit 等の Objective-C 由来の Framework に引っ張られて参照型中心のプログラミングになってしまうことが多いと思います。そのため、せっかく値型中心の言語なのに Swift で値型中心のプログラミングをするための知見は十分に広まっていないように思います。この発表を通して、多くの人に値型中心でプログラミングをすることに対して興味を持っていただければと思います。
     - time: "23:00"
       name: "クロージング"
-2017-spring:
+- id: 2017-spring
   title: "Swift Tweets 2017 Spring"
   short_title: "2017 Spring"
   hashtag: "swtws"
@@ -359,7 +359,7 @@
       tweeter_id: nanamoto7483
     - time: "23:00"
       name: "クロージング"
-2017-winter:
+- id: 2017-winter
   title: "Swift Tweets 2017 Winter"
   short_title: "2017 Winter"
   hashtag: "swtws"

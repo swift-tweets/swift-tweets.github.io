@@ -17,7 +17,7 @@ css:
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/">{{ site.data.tweetups[site.data.tweetup_ids.first].short_title }}</a>
+                    <a href="/">{{ site.data.tweetups.first.short_title }}</a>
                 </li>
                 <li class="current">
                     <a href="talks.html">トーク一覧</a>
@@ -38,7 +38,8 @@ css:
 <section id="tweeters">
     <div class="container">
         <div class="row">
-            {% for tweeter in site.data.tweeters %}
+            {% assign tweeters = site.data.tweeters | sort: 'id' %}
+            {% for tweeter in tweeters %}
             <div class="col-lg-6 col-sm-12 text-center">
                 <div class="tweeter">
                     <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />
@@ -46,8 +47,7 @@ css:
                     {{ tweeter.profile | markdownify }}
                     <hr class="primary">
                     <ul class="list-group">
-                    {% for tweetup_id in site.data.tweetup_ids %}
-                    {% assign tweetup = site.data.tweetups[tweetup_id] %}
+                    {% for tweetup in site.data.tweetups %}
                     {% for talk in tweetup.schedule %}
                     {% unless talk.description %}{% continue %}{% endunless %}
                     {% if talk.tweeter_id == tweeter.id %}
@@ -60,7 +60,7 @@ css:
                                 {%if talk.url %}<a href="{{ talk.url }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}
                                 {%if talk.tweets_url %}<a href="{{ talk.tweets_url }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
                             </p>
-                            <p class="text-muted"><a href="{% if tweetup_id == site.data.tweetup_ids.first %}/{% else %}{{ tweetup_id }}{% endif %}">{{ tweetup.short_title }}</a></p>
+                            <p class="text-muted"><a href="{% if tweetup.id == site.data.tweetups.first.id %}/{% else %}{{ tweetup.id }}{% endif %}">{{ tweetup.short_title }}</a></p>
                         </li>
                     {% endif %}
                     {% endfor %}
