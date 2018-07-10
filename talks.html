@@ -30,7 +30,7 @@ css:
 </nav>
 
 {% assign tweeters = '' | split: '' %}
-{% for tweetupId in site.data.tweetup_ids %}
+{% for tweetupId in site.data.tweetupIds %}
     {% assign tweeters = tweeters | concat: site.data.tweetups[tweetupId].tweeters %}
 {% endfor %}
 {% assign tweeterIds = tweeters | sort: 'id' | map: 'id' | uniq %}
@@ -51,7 +51,7 @@ css:
                     {{ tweeter.profile | markdownify }}
                     <hr class="primary">
                     <ul class="list-group">
-                    {% for tweetupId in site.data.tweetup_ids %}
+                    {% for tweetupId in site.data.tweetupIds %}
                     {% assign tweetup = site.data.tweetups[tweetupId] %}
                     {% for talk in tweetup.schedule %}
                     {% unless talk.description %}{% continue %}{% endunless %}
