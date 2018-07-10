@@ -2,10 +2,6 @@
   icon: https://pbs.twimg.com/profile_images/889301082844876802/ZoVAsW5A_400x400.jpg
   profile: |
     コンパイラや型システムをSwiftを使って勉強している博多在住のソフトウェアエンジニアです。
-- id: koher
-  icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-  profile: |
-    [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
 - id: k_katsumi
   icon: https://pbs.twimg.com/profile_images/938253364877434880/AFvicwis_400x400.jpg
   profile: |
@@ -42,6 +38,10 @@
   icon: https://pbs.twimg.com/profile_images/476454722593771520/goSBw3js.png
   profile: |
     [JOIN US](http://joinus30.com) のエンジニア。 [Qiita (@mono0926)](http://qiita.com/mono0926) ・ [Medium の Publication](https://medium.com/swift-column) ・ [Build Insiderオピニオン](http://www.buildinsider.net/column/ono-masayuki) などで、多数の Swift ・ iOS 系記事を書いている。開発だけでなく最新ガジェット使うのも好き。
+- id: koher
+  icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
+  profile: |
+    [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
 - id: susieyy
   icon: https://pbs.twimg.com/profile_images/526384966729355266/pVDh04p6.png
   profile: |
