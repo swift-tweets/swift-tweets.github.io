@@ -65,8 +65,9 @@ css:
                         <li class="list-group-item">
                             {% assign talkTitle = talk.title | escape %}
                             {% assign talkDescription = talk.description | markdownify | strip_newlines | join: '' | escape %}
-                            <h4><a data-toggle="popover" data-placement="top" title="{{ talkTitle }}" data-content="{{ talkDescription }}">{{ talk.title }}</a></h4>
+                            <h4>{{ talk.title }}</h4>
                             <p>
+                                <a data-toggle="popover" data-placement="top" title="{{ talkTitle }}" data-content="{{ talkDescription }}"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                 {%if talk.url %}<a href="{{ talk.url }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}
                                 {%if talk.tweetsUrl %}<a href="{{ talk.tweetsUrl }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
                             </p>
