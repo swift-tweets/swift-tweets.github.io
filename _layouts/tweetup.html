@@ -3,7 +3,7 @@ layout: common
 css:
   - tweetup
 ---
-{% assign tweetup=site.data.tweetups[page.tweetupId] %}
+{% assign tweetup = site.data.tweetups[page.tweetup_id] %}
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,15 +41,15 @@ css:
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">履歴 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="talks">トーク一覧</a></li>
-                        {% for tweetupId in site.data.tweetupIds %}
-                        <li{% if tweetupId == page.tweetupId %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
+                        {% for tweetup_id in site.data.tweetup_ids %}
+                        <li{% if tweetup_id == page.tweetup_id %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetup_id }}{% endif %}">{{ site.data.tweetups[tweetup_id].short_title }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
                 <li class="non-dropdown"><hr /></li>
                 <li class="non-dropdown"><a href="talks">トーク一覧</a></li>
-                {% for tweetupId in site.data.tweetupIds %}
-                <li class="non-dropdown{% if tweetupId == page.tweetupId %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetupId }}{% endif %}">{{ site.data.tweetups[tweetupId].shortTitle }}</a></li>
+                {% for tweetup_id in site.data.tweetup_ids %}
+                <li class="non-dropdown{% if tweetup_id == page.tweetup_id %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetup_id }}{% endif %}">{{ site.data.tweetups[tweetup_id].short_title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -133,9 +133,9 @@ css:
   </div>
   <div class="container">
       <div class="row">
-        {% for tweeterId in tweetup.tweeterIds %}
+        {% for tweeter_id in tweetup.tweeter_ids %}
         {% for a_tweeter in site.data.tweeters %}
-            {% if a_tweeter.id == tweeterId %}
+            {% if a_tweeter.id == tweeter_id %}
                 {% assign tweeter = a_tweeter %}
                 {% break %}
             {% endif %}
@@ -159,7 +159,7 @@ css:
                 <h2 class="section-heading">タイムテーブル</h2>
                 <hr class="primary">
                 <div class="panel panel-default bg-dark">
-                  <div class="panel-heading bg-dark">{{ tweetup.date }} ({{ tweetup.dayOfWeek }})</div>
+                  <div class="panel-heading bg-dark">{{ tweetup.date }} ({{ tweetup.day_of_week }})</div>
                   <table class="table">
                     <tbody>
                       {% for talk in tweetup.schedule %}
@@ -169,9 +169,9 @@ css:
                           <h4>
                               {% if talk.name %}{{ talk.name }}{% else %}"{{ talk.title }}"{% endif %}
                               {%if talk.url %}<a href="{{ talk.url }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}
-                              {%if talk.tweetsUrl %}<a href="{{ talk.tweetsUrl }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
+                              {%if talk.tweets_url %}<a href="{{ talk.tweets_url }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
                           </h4>
-                          {% if talk.tweeterId %}<h5><a href="https://twitter.com/{{ talk.tweeterId }}">@{{ talk.tweeterId }}</a></h5>{% endif %}
+                          {% if talk.tweeter_id %}<h5><a href="https://twitter.com/{{ talk.tweeter_id }}">@{{ talk.tweeter_id }}</a></h5>{% endif %}
                           {% if talk.description %}<p>{{ talk.description | markdownify }}</p>{% endif %}
                         </td>
                       </tr>
@@ -191,8 +191,8 @@ css:
                 <h2 class="section-heading">参加方法</h2>
                 <hr class="primary">
                 <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は Twitter で <a href="https://twitter.com/hashtag/{{ tweetup.hashtag }}?f=tweets">#{{ tweetup.hashtag }}</a> のハッシュタグを御覧下さい。</p>
-                <p>リプライやメンションするときもできるだけ <a href="https://twitter.com/hashtag/{{ tweetup.hashtag }}?f=tweets">#{{ tweetup.hashtag }}</a> のハッシュタグをつけて下さい。 Swift Tweets の目的の一つとして、オフラインの懇親会のように気軽に交流できる場をオンラインでも作りたいということがあります。開催中は面識のない他の参加者からリプライやメンションされることをご了承下さい。参加者一覧については<a href="{{ tweetup.entryLink }}participation/#participants">こちら</a>を御覧下さい。</p>
-                <a href="{{ tweetup.entryLink }}" class="btn btn-primary btn-xl">参加する</a>
+                <p>リプライやメンションするときもできるだけ <a href="https://twitter.com/hashtag/{{ tweetup.hashtag }}?f=tweets">#{{ tweetup.hashtag }}</a> のハッシュタグをつけて下さい。 Swift Tweets の目的の一つとして、オフラインの懇親会のように気軽に交流できる場をオンラインでも作りたいということがあります。開催中は面識のない他の参加者からリプライやメンションされることをご了承下さい。参加者一覧については<a href="{{ tweetup.entry_link }}participation/#participants">こちら</a>を御覧下さい。</p>
+                <a href="{{ tweetup.entry_link }}" class="btn btn-primary btn-xl">参加する</a>
             </div>
         </div>
     </div>
@@ -226,7 +226,7 @@ css:
             </div>
             <div class="col-lg-4 col-lg-offset-2 text-center">
                 <i class="fa fa-twitter fa-3x sr-contact"></i>
-                <p><a href="https://twitter.com/{{ tweetup.contact.twitterId }}">@{{ tweetup.contact.twitterId }}</a></p>
+                <p><a href="https://twitter.com/{{ tweetup.contact.twitter_id }}">@{{ tweetup.contact.twitter_id }}</a></p>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>

@@ -17,7 +17,7 @@ css:
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/">{{ site.data.tweetups[site.data.tweetupIds.first].shortTitle }}</a>
+                    <a href="/">{{ site.data.tweetups[site.data.tweetup_ids.first].short_title }}</a>
                 </li>
                 <li class="current">
                     <a href="talks.html">トーク一覧</a>
@@ -46,11 +46,11 @@ css:
                     {{ tweeter.profile | markdownify }}
                     <hr class="primary">
                     <ul class="list-group">
-                    {% for tweetupId in site.data.tweetupIds %}
-                    {% assign tweetup = site.data.tweetups[tweetupId] %}
+                    {% for tweetup_id in site.data.tweetup_ids %}
+                    {% assign tweetup = site.data.tweetups[tweetup_id] %}
                     {% for talk in tweetup.schedule %}
                     {% unless talk.description %}{% continue %}{% endunless %}
-                    {% if talk.tweeterId == tweeter.id %}
+                    {% if talk.tweeter_id == tweeter.id %}
                         <li class="list-group-item">
                             {% assign talkTitle = talk.title | escape %}
                             {% assign talkDescription = talk.description | markdownify | strip_newlines | join: '' | escape %}
@@ -58,9 +58,9 @@ css:
                             <p>
                                 <a data-toggle="popover" data-placement="top" title="{{ talkTitle }}" data-content="{{ talkDescription }}"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                 {%if talk.url %}<a href="{{ talk.url }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}
-                                {%if talk.tweetsUrl %}<a href="{{ talk.tweetsUrl }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
+                                {%if talk.tweets_url %}<a href="{{ talk.tweets_url }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
                             </p>
-                            <p class="text-muted"><a href="{% if tweetupId == site.data.tweetupIds.first %}/{% else %}{{ tweetupId }}{% endif %}">{{ tweetup.shortTitle }}</a></p>
+                            <p class="text-muted"><a href="{% if tweetup_id == site.data.tweetup_ids.first %}/{% else %}{{ tweetup_id }}{% endif %}">{{ tweetup.short_title }}</a></p>
                         </li>
                     {% endif %}
                     {% endfor %}
