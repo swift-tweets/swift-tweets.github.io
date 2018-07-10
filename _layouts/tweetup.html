@@ -3,7 +3,7 @@ layout: common
 css:
   - tweetup
 ---
-{% assign tweetup=site.data.tweetups[page.tweetup_id] %}
+{% assign tweetup=site.data.tweetups[page.tweetupId] %}
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,14 +38,14 @@ css:
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">履歴 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        {% for tweetup_id in site.data.tweetup_ids %}
-                        <li><a href="{% if forloop.first == true %}/{% else %}{{ tweetup_id }}{% endif %}">{{ site.data.tweetups[tweetup_id].shortTitle }}</a></li>
+                        {% for aTweetupId in site.data.tweetup_ids %}
+                        <li><a href="{% if forloop.first == true %}/{% else %}{{ aTweetupId }}{% endif %}">{{ site.data.tweetups[aTweetupId].shortTitle }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
                 <li class="non-dropdown"><hr /></li>
-                {% for tweetup_id in site.data.tweetup_ids %}
-                <li class="non-dropdown"><a href="{% if forloop.first == true %}/{% else %}{{ tweetup_id }}{% endif %}">{{ site.data.tweetups[tweetup_id].shortTitle }}</a></li>
+                {% for aTweetupId in site.data.tweetup_ids %}
+                <li class="non-dropdown"><a href="{% if forloop.first == true %}/{% else %}{{ aTweetupId }}{% endif %}">{{ site.data.tweetups[aTweetupId].shortTitle }}</a></li>
                 {% endfor %}
             </ul>
         </div>
