@@ -133,7 +133,13 @@ css:
   </div>
   <div class="container">
       <div class="row">
-        {% for tweeter in tweetup.tweeters %}
+        {% for tweeterId in tweetup.tweeterIds %}
+        {% for a_tweeter in site.data.tweeters %}
+            {% if a_tweeter.id == tweeterId %}
+                {% assign tweeter = a_tweeter %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
         <div class="col-lg-6 col-sm-12 text-center">
           <div class="feature-box">
             <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />

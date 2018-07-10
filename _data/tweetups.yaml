@@ -12,15 +12,9 @@
     twitterId: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: ukitaka_
-      icon: https://pbs.twimg.com/profile_images/889301082844876802/ZoVAsW5A_400x400.jpg
-      profile: |
-        コンパイラや型システムをSwiftを使って勉強している博多在住のソフトウェアエンジニアです。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+  tweeterIds:
+    - ukitaka_
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -74,15 +68,9 @@
     twitterId: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: k_katsumi
-      icon: https://pbs.twimg.com/profile_images/938253364877434880/AFvicwis_400x400.jpg
-      profile: |
-        Software enginner @FOLIO (prev @Realm). 自転車とキャンプが趣味です。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+  tweeterIds:
+    - k_katsumi
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -163,15 +151,9 @@
     twitterId: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: ikesyo
-      icon: https://pbs.twimg.com/profile_images/650531959152574464/RuR-d-4B_400x400.jpg
-      profile: |
-        Swift (corelibs-foundation) contributor. [Himotoki](https://github.com/ikesyo/Himotoki)/[Carthage](https://github.com/Carthage/Carthage)/[ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift)のコミッター。 京都の[はてな](http://www.hatena.ne.jp/)でiOS/Androidアプリエンジニアやってます。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+  tweeterIds:
+    - ikesyo
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -218,19 +200,10 @@
     twitterId: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: omochimetaru
-      icon: https://pbs.twimg.com/profile_images/448177563051913216/Tcox9dud_400x400.png
-      profile: |
-        いろいろなプログラミング言語について横断的に議論するのが好き。その中でも Swift は 1 世代先を行っていると思っていて、一番やっていっている。最近は [Discord](https://medium.com/swift-column/discord-ios-20d586e373c0) での話し相手を増やすべく、勧誘をしている。
-    - id: taketo1024
-      icon: https://pbs.twimg.com/profile_images/980463971143577600/UUef_Mrd_400x400.jpg
-      profile: |
-        元 iOS エンジニア、現数学専攻の大学院生。数学科卒業後、 9 年間ベンチャー企業から大手 IT 企業まで渡り歩き、再び大学院に戻って数学を志す。[「プログラマのための数学勉強会」](https://maths4pg.connpass.com/)主催。
+  tweeterIds:
+    - koher
+    - omochimetaru
+    - taketo1024
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -282,23 +255,11 @@
     twitterId: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: 1024jp
-      icon: https://pbs.twimg.com/profile_images/723566478247649281/q-Vljb8v.jpg
-      profile: |
-        余暇時間にせっせと開発をするホビー開発者。 macOS アプリケーション専門。 2014 年から [CotEditor](https://coteditor.com) の開発を引き継いでいる。 OSS プロジェクト運営からコーディング、アイコンのデザインまで、 macOS のアプリケーション開発に関わることなら全部やるマンである。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: rintaro
-      icon: https://pbs.twimg.com/profile_images/856741178774925312/KZTozYoo.jpg
-      profile: |
-        Swift で開発したい Web エンジニア。なかなか仕事で Swift 書けないけどコンパイラの仕組みを勉強したいと思い、ソース見てたら[いつの間にか PR 投げまくるようになって今に至る](https://github.com/apple/swift/commits?author=rintaro)。オープンソース化前は [Stack Overflow で遊んでた](http://stackoverflow.com/users/3804019/rintaro)。
-    - id: takasek
-      icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC.jpg
-      profile: |
-        フリーランスエンジニア、ほぼ [FiNC](https://finc.com/) 。 Swift のおかげで型と設計が好きになり、方々の勉強会に参加しては発表駆動学習を試みている👉 [Qiita](http://qiita.com/takasek), [SpeakerDeck](https://speakerdeck.com/takasek) 。イチオシの自作 OSS は、 target/action をクロージャに置き換える [ActionClosurable](https://github.com/takasek/ActionClosurable) 。
+  tweeterIds:
+    - 1024jp
+    - koher
+    - rintaro
+    - takasek
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -360,15 +321,9 @@
     twitterId: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: d_date
-      icon: https://pbs.twimg.com/profile_images/895152875155935234/f9h5niTO_400x400.jpg
-      profile: |
-        フリーランスでエンジニアをしています。 MRC の時代から iOS アプリの開発を行っていて、最近は [Realm News の日本語への翻訳](https://realm.io/jp/news/)や、[英語の勉強会](https://clem.connpass.com)の運営もしています。よく使うアーキテクチャは MVC です。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+  tweeterIds:
+    - d_date
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
@@ -426,23 +381,11 @@
     - id: "qiita"
       name: "Qiita"
       link: "http://qiita.com/"
-  tweeters:
-    - id: _mono
-      icon: https://pbs.twimg.com/profile_images/476454722593771520/goSBw3js.png
-      profile: |
-        [JOIN US](http://joinus30.com) のエンジニア。 [Qiita (@mono0926)](http://qiita.com/mono0926) ・ [Medium の Publication](https://medium.com/swift-column) ・ [Build Insiderオピニオン](http://www.buildinsider.net/column/ono-masayuki) などで、多数の Swift ・ iOS 系記事を書いている。開発だけでなく最新ガジェット使うのも好き。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: susieyy
-      icon: https://pbs.twimg.com/profile_images/526384966729355266/pVDh04p6.png
-      profile: |
-        [Wantedly](http://wantedly.com) の新規アプリ開発エンジニア。 [Swift について発表](http://connpass.com/user/youhei_sugigami/presentation/)したり [Qiita (@susieyy)](http://qiita.com/susieyy) で Swift について書いたりしています。
-    - id: tarunon
-      icon: https://pbs.twimg.com/profile_images/677005712497713152/X_2Mf8gO.jpg
-      profile: |
-        「たるのんだよ。すいふとをかくけど、おぶじぇしいもかくよ。」博多で Swift 書いてます。 `associatedtype` でガチガチに固めたコードを渡すと喜びます。 [GitHub はこちら](http://github.com/tarunon/)。
+  tweeterIds:
+    - _mono
+    - koher
+    - susieyy
+    - tarunon
   schedule:
     - time: "22:00"
       name: "オープニング"

@@ -35,21 +35,10 @@ css:
     <!-- /.container-fluid -->
 </nav>
 
-{% assign tweeters = '' | split: '' %}
-{% for tweetupId in site.data.tweetupIds %}
-    {% assign tweeters = tweeters | concat: site.data.tweetups[tweetupId].tweeters %}
-{% endfor %}
-{% assign tweeterIds = tweeters | sort: 'id' | map: 'id' | uniq %}
 <section id="tweeters">
     <div class="container">
         <div class="row">
-{% for tweeterId in tweeterIds %}
-    {% for aTweeter in tweeters %}
-        {% if aTweeter.id == tweeterId %}
-            {% assign tweeter = aTweeter %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
+            {% for tweeter in site.data.tweeters %}
             <div class="col-lg-6 col-sm-12 text-center">
                 <div class="tweeter">
                     <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />
@@ -61,7 +50,7 @@ css:
                     {% assign tweetup = site.data.tweetups[tweetupId] %}
                     {% for talk in tweetup.schedule %}
                     {% unless talk.description %}{% continue %}{% endunless %}
-                    {% if talk.tweeterId == tweeterId %}
+                    {% if talk.tweeterId == tweeter.id %}
                         <li class="list-group-item">
                             {% assign talkTitle = talk.title | escape %}
                             {% assign talkDescription = talk.description | markdownify | strip_newlines | join: '' | escape %}
@@ -79,7 +68,7 @@ css:
                     </ul>
                 </div>
             </div>
-{% endfor %}
+            {% endfor %}
         </div>
     </div>
 </section>
