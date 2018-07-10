@@ -71,7 +71,7 @@ css:
                                 {%if talk.url %}<a href="{{ talk.url }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}
                                 {%if talk.tweetsUrl %}<a href="{{ talk.tweetsUrl }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
                             </p>
-                            <p class="text-muted">{{ tweetup.shortTitle }}</p>
+                            <p class="text-muted"><a href="{% if tweetupId == site.data.tweetupIds.first %}/{% else %}{{ tweetupId }}{% endif %}">{{ tweetup.shortTitle }}</a></p>
                         </li>
                     {% endif %}
                     {% endfor %}
