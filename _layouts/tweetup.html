@@ -29,9 +29,11 @@ css:
                 <li>
                     <a class="page-scroll" href="#entry">参加方法</a>
                 </li>
+                {% if tweetup.sponsors.size > 0 %}
                 <li>
                     <a class="page-scroll" href="#sponsors">スポンサー</a>
                 </li>
+                {% endif %}
                 <li>
                     <a class="page-scroll" href="#contact">連絡先</a>
                 </li>
