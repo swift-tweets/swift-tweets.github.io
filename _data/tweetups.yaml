@@ -1,63 +1,48 @@
-2018-summer:
+- id: 2018-summer
   title: "Swift Tweets 2018 Summer"
-  shortTitle: "2018 Summer"
-  lastId: 2018-spring
+  short_title: "2018 Summer"
   hashtag: "swtws"
   date: "2018-07-14"
-  dayOfWeek: "SAT"
+  day_of_week: "SAT"
   time: "21:00"
   timezone: "JST"
-  entryLink: "https://swift-tweets.connpass.com/event/84462/"
+  entry_link: "https://swift-tweets.connpass.com/event/84462/"
   contact:
-    twitterId: koher
+    twitter_id: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: ukitaka_
-      icon: https://pbs.twimg.com/profile_images/889301082844876802/ZoVAsW5A_400x400.jpg
-      profile: |
-        コンパイラや型システムをSwiftを使って勉強している博多在住のソフトウェアエンジニアです。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: shmdevelop
-      icon: https://pbs.twimg.com/profile_images/758511396443131905/XYxiqSMR_200x200.jpg
-    - id: el_hrhm
-      icon: https://pbs.twimg.com/profile_images/976839992541630464/X-qNourh_200x200.jpg
-    - id: orga_chem
-      icon: https://pbs.twimg.com/profile_images/378800000251552195/5b54e030a12bb39e4219ab8ba442a810_200x200.png
-    - id: ar_t_ae
-      icon: https://pbs.twimg.com/profile_images/1013708936405344257/k4yo_gTw_400x400.jpg
+  tweeter_ids:
+    - ukitaka_
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
       title: "Swiftの型システムにおけるサブタイピングの定義と実装"
-      tweeterId: ukitaka_
+      tweeter_id: ukitaka_
       description: |
         Swiftの型システムには他の言語にはみられないような特徴がいくつかあり、それによって言語としての使いやすさが支えられています。 今回は特にサブタイピングに焦点をあってて、どんな規則があり、それがどのように実装されているかを解説してみたいと思います。
     - time: "21:40"
       name: "休憩"
     - time: "21:45"
       title: "Coming soon"
-      tweeterId: shmdevelop
+      tweeter_id: shmdevelop
     - time: "21:55"
       title: "Server Side Swift -Kitura & Vapor-"
-      tweeterId: el_hrhm
+      tweeter_id: el_hrhm
     - time: "22:05"
       name: "休憩"
     - time: "22:10"
       title: "Coming soon"
-      tweeterId: orga_chem
+      tweeter_id: orga_chem
     - time: "22:20"
       title: "Swift4.2のRandom APIについて"
-      tweeterId: ar_t_ae
+      tweeter_id: ar_t_ae
     - time: "22:30"
       name: "休憩"
     - time: "22:35"
       title: "なぜSwiftのプロトコルはジェネリクスをサポートしないのか"
-      tweeterId: koher
+      tweeter_id: koher
       description: |
         Swift のプロトコルはよく Java 等のインタフェースのようなものだと言われます。しかし、 Java 等のインタフェースとは異なり、 Swift のプロトコルはジェネリクスをサポートしていません。ジェネリクスの型パラメータの代わりにプロトコルは `associatedtype` を持てますが、 `associatedtype` を持ったプロトコル型の変数を作ることはできません。ジェネリックなインタフェースを作り、そのインタフェース型の変数を扱うことは、 Java 等ではあまりに当たり前に行われていることです。どうして Swift のプロトコルはそれができない仕様になっているのでしょうか。本トークでは、
 
@@ -68,45 +53,30 @@
         について説明します。
     - time: "23:05"
       name: "クロージング"
-2018-spring:
+- id: 2018-spring
   title: "Swift Tweets 2018 Spring"
-  shortTitle: "2018 Spring"
-  lastId: 2018-winter
+  short_title: "2018 Spring"
   hashtag: "swtws"
   date: "2018-04-14"
-  dayOfWeek: "SAT"
+  day_of_week: "SAT"
   time: "21:00"
   timezone: "JST"
-  entryLink: "https://swift-tweets.connpass.com/event/77111/"
+  entry_link: "https://swift-tweets.connpass.com/event/77111/"
   contact:
-    twitterId: koher
+    twitter_id: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: k_katsumi
-      icon: https://pbs.twimg.com/profile_images/938253364877434880/AFvicwis_400x400.jpg
-      profile: |
-        Software enginner @FOLIO (prev @Realm). 自転車とキャンプが趣味です。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: S_Shimotori_pub
-      icon: https://pbs.twimg.com/profile_images/813245377663012865/Jamck_qy_400x400.jpg
-    - id: amarillons
-      icon: https://pbs.twimg.com/profile_images/913192634411229184/69eFuPDI_400x400.jpg
-    - id: fumiyasac
-      icon: https://pbs.twimg.com/profile_images/612594250258120704/uyKDpKOn_400x400.jpg
-      profile: |
-        アプリのUI実装が好きな元デザイナーからジョブチェンジをしたエンジニア。QiitaやGithubなどでもUI実装に関するサンプルや解説記事を投稿したり、Swift愛好会をはじめとする勉強会等でもたまに登壇しています。アイデアを練る時はもっぱら手書き派です。
-    - id: hironytic
-      icon: https://pbs.twimg.com/profile_images/902030434900467714/4_UrnG-l_400x400.jpg
+  tweeter_ids:
+    - k_katsumi
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
       title: "Swift 4.1のConditional Conformanceとジェネリクスの未来"
-      tweeterId: koher
+      url: "https://qiita.com/koher/items/4ae98d71b8eb06ab1b79"
+      tweets_url: "https://twitter.com/koher/status/985127876507860993"
+      tweeter_id: koher
       description: |
         先日 Swift 4.1 がリリースされました。 Swift 4.1 の最大の変更はなんといっても [Conditional Conformance](https://github.com/apple/swift-evolution/blob/master/proposals/0143-conditional-conformances.md) です。本発表では、
 
@@ -122,26 +92,31 @@
     - time: "22:00"
       title: "Swift 4.1で導入されたcompactMapとその背景について"
       url: "https://qiita.com/amarillons/items/e897ca495470963249fe"
-      tweeterId: amarillons
+      tweets_url: "https://twitter.com/amarillons/status/985147260689420288"
+      tweeter_id: amarillons
     - time: "22:10"
       title: "QuickとXCTestと"
       url: "https://qiita.com/S_Shimotori/items/197c89913fe60e234381"
-      tweeterId: S_Shimotori_pub
+      tweets_url: "https://twitter.com/S_Shimotori_pub/status/985139027903840256"
+      tweeter_id: S_Shimotori_pub
     - time: "22:20"
       name: "休憩"
     - time: "22:25"
       title: "UIを作る際にライブラリにする？それともDIYする？の切り分けと実装のアイデア帳"
       url: "https://qiita.com/fumiyasac@github/items/144aec1e1726500d9d5a"
-      tweeterId: fumiyasac
+      tweets_url: "https://twitter.com/fumiyasac/status/985143513502253056"
+      tweeter_id: fumiyasac
     - time: "22:35"
       title: "！なことっ 知っとこな！"
       url: "https://qiita.com/hironytic/items/0ca33b2c0415cdd38aff"
-      tweeterId: hironytic
+      tweets_url: "https://twitter.com/hironytic/status/985163326530310146"
+      tweeter_id: hironytic
     - time: "22:45"
       name: "休憩"
     - time: "22:50"
       title: "Swift Playgroundを作ろう"
-      tweeterId: k_katsumi
+      tweets_url: "https://twitter.com/k_katsumi/status/985166281153265664"
+      tweeter_id: k_katsumi
       description: |
         SwiftでJSFiddleのような、オンラインでいろいろなコードを試せるPlaygroundを作りましょう。
         重たいXcodeを起動しなくてもブラウザでサッと書いてすぐにコードを実行して結果を確認できます。
@@ -160,39 +135,29 @@
         しかし、自分でセットアップするぶんにはまだリリースされてない最新のスナップショットを使用することもできます！
     - time: "23:20"
       name: "クロージング"
-2018-winter:
+- id: 2018-winter
   title: "Swift Tweets 2018 Winter"
-  shortTitle: "2018 Winter"
-  lastId: 2017-fall
+  short_title: "2018 Winter"
   hashtag: "swtws"
   date: "2018-01-20"
-  dayOfWeek: "SAT"
+  day_of_week: "SAT"
   time: "21:00"
   timezone: "JST"
-  entryLink: "https://swift-tweets.connpass.com/event/70160/"
+  entry_link: "https://swift-tweets.connpass.com/event/70160/"
   contact:
-    twitterId: koher
+    twitter_id: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: ikesyo
-      icon: https://pbs.twimg.com/profile_images/650531959152574464/RuR-d-4B_400x400.jpg
-      profile: |
-        Swift (corelibs-foundation) contributor. [Himotoki](https://github.com/ikesyo/Himotoki)/[Carthage](https://github.com/Carthage/Carthage)/[ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift)のコミッター。 京都の[はてな](http://www.hatena.ne.jp/)でiOS/Androidアプリエンジニアやってます。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: takasek
-      icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC_400x400.jpg
-    - id: hiragram
-      icon: https://pbs.twimg.com/profile_images/953906605422141440/it-UnoHc_400x400.jpg
+  tweeter_ids:
+    - ikesyo
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
       title: "どうやってSwiftのOSSをメンテナンスしていくか"
-      tweeterId: ikesyo
+      tweets_url: "https://twitter.com/ikesyo/status/954687472369201155"
+      tweeter_id: ikesyo
       description: |
         OSSを公開すること自体は簡単ですが、それをきちんとメンテナンスしていくことは意外と大変です。ましてやSwiftのような若い言語では、毎年のバージョンアップにも追従していく必要があります。
 
@@ -201,51 +166,47 @@
       name: "休憩"
     - time: "21:45"
       title: "Swift Foundationにコントリビュートする"
-      tweeterId: takasek
+      url: "https://qiita.com/takasek/items/01f7746bf444bd5c85c0"
+      tweets_url: "https://twitter.com/takasek/status/954696314171740160"
+      tweeter_id: takasek
     - time: "21:55"
       title: "iOSじゃないところでSwiftを使う"
-      tweeterId: hiragram
+      tweets_url: "https://twitter.com/hiragram/status/954699064855076864"
+      tweeter_id: hiragram
     - time: "22:05"
       name: "休憩"
     - time: "22:10"
       title: "世界をプログラミングで満たしたい"
-      tweeterId: koher
+      tweets_url: "https://twitter.com/koher/status/954702886935527424"
+      tweeter_id: koher
+      description: |
+        -
     - time: "22:50"
       name: "クロージング"
-2017-fall:
+- id: 2017-fall
   title: "Swift Tweets 2017 Fall"
-  shortTitle: "2017 Fall"
-  lastId: 2017-summer
+  short_title: "2017 Fall"
   hashtag: "swtws"
   date: "2017-10-21"
-  dayOfWeek: "SAT"
+  day_of_week: "SAT"
   time: "21:00"
   timezone: "JST"
-  entryLink: "https://swift-tweets.connpass.com/event/62883/"
+  entry_link: "https://swift-tweets.connpass.com/event/62883/"
   contact:
-    twitterId: koher
+    twitter_id: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: omochimetaru
-      icon: https://pbs.twimg.com/profile_images/448177563051913216/Tcox9dud_400x400.png
-      profile: |
-        いろいろなプログラミング言語について横断的に議論するのが好き。その中でも Swift は 1 世代先を行っていると思っていて、一番やっていっている。最近は [Discord](https://medium.com/swift-column/discord-ios-20d586e373c0) での話し相手を増やすべく、勧誘をしている。
-    - id: taketo1024
-      icon: https://pbs.twimg.com/profile_images/980463971143577600/UUef_Mrd_400x400.jpg
-      profile: |
-        元 iOS エンジニア、現数学専攻の大学院生。数学科卒業後、 9 年間ベンチャー企業から大手 IT 企業まで渡り歩き、再び大学院に戻って数学を志す。[「プログラマのための数学勉強会」](https://maths4pg.connpass.com/)主催。
+  tweeter_ids:
+    - koher
+    - omochimetaru
+    - taketo1024
   schedule:
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
       title: "Ownershipの紹介"
       url: "https://qiita.com/omochimetaru/items/c5f0eabde516e4713367"
-      tweeterId: omochimetaru
+      tweeter_id: omochimetaru
       description: |
         Swift はネイティブコンパイルや値型など、高速な動作を意識して設計されています。しかし、 CPU の性能を活かしきるコードを書くには機能が足りていません。
 
@@ -257,7 +218,7 @@
     - time: "22:40"
       title: "Swift で √2 を作ろう"
       url: "https://togetter.com/li/1163526"
-      tweeterId: taketo1024
+      tweeter_id: taketo1024
       description: |
         数学における代数構造を `protocol` として、対応する集合を `struct` として実装することで、数学の理論に忠実なコードを Protocol Oriented に作ることができます。
 
@@ -269,51 +230,38 @@
     - time: "22:20"
       title: "Proposalには載っていないSwift 5のasync/awaitが素晴らしいと思う理論的背景"
       url: "https://qiita.com/koher/items/29357b5e00aec1962601"
-      tweeterId: koher
+      tweeter_id: koher
       description: |
         Swift プログラマは長年に渡り非同期処理の辛さを強いられてきました。しかし去る 8 月、ついに Chris Lattner から `async/await` が[提案されました](https://gist.github.com/lattner/429b9070918248274f25b714dcfc7619)。この `async/await` は C# や JavaScript のものをそのまま輸入したわけではなく、 Swift にフィットするように変更が加えられています。
 
         実は、僕は[ほぼ同じ内容の提案をしようと準備をしていました](https://gist.github.com/koher/3e04b4f1b8adbbf0379d38c0ad83a3ea)。しかし、内容はほぼ同じものの、 Chris Lattner の Proposal には僕がなぜこの形の `async/await` が Swift にフィットすると考えたのかと同じような説明は書かれていませんでした。本発表では、僕がこのような `async/await` が適していると考えた理論的背景を説明することで、提案された `async/await` の素晴らしさについて補足することを目指します。
     - time: "23:00"
       name: "クロージング"
-2017-summer:
+- id: 2017-summer
   title: "Swift Tweets 2017 Summer"
-  shortTitle: "2017 Summer"
-  lastId: 2017-spring
+  short_title: "2017 Summer"
   hashtag: "swtws"
   date: "2017-07-22"
-  dayOfWeek: "SAT"
+  day_of_week: "SAT"
   time: "21:00"
   timezone: "JST"
-  entryLink: "https://swift-tweets.connpass.com/event/55313/"
+  entry_link: "https://swift-tweets.connpass.com/event/55313/"
   contact:
-    twitterId: koher
+    twitter_id: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: 1024jp
-      icon: https://pbs.twimg.com/profile_images/723566478247649281/q-Vljb8v.jpg
-      profile: |
-        余暇時間にせっせと開発をするホビー開発者。 macOS アプリケーション専門。 2014 年から [CotEditor](https://coteditor.com) の開発を引き継いでいる。 OSS プロジェクト運営からコーディング、アイコンのデザインまで、 macOS のアプリケーション開発に関わることなら全部やるマンである。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: rintaro
-      icon: https://pbs.twimg.com/profile_images/856741178774925312/KZTozYoo.jpg
-      profile: |
-        Swift で開発したい Web エンジニア。なかなか仕事で Swift 書けないけどコンパイラの仕組みを勉強したいと思い、ソース見てたら[いつの間にか PR 投げまくるようになって今に至る](https://github.com/apple/swift/commits?author=rintaro)。オープンソース化前は [Stack Overflow で遊んでた](http://stackoverflow.com/users/3804019/rintaro)。
-    - id: takasek
-      icon: https://pbs.twimg.com/profile_images/708591418655125505/toP3_XwC.jpg
-      profile: |
-        フリーランスエンジニア、ほぼ [FiNC](https://finc.com/) 。 Swift のおかげで型と設計が好きになり、方々の勉強会に参加しては発表駆動学習を試みている👉 [Qiita](http://qiita.com/takasek), [SpeakerDeck](https://speakerdeck.com/takasek) 。イチオシの自作 OSS は、 target/action をクロージャに置き換える [ActionClosurable](https://github.com/takasek/ActionClosurable) 。
+  tweeter_ids:
+    - 1024jp
+    - koher
+    - rintaro
+    - takasek
   schedule:
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
       title: "CotEditor を Swift に移行する"
       url: "https://qiita.com/1024jp/items/ef79bfb6ba9823adddcc"
-      tweeterId: 1024jp
+      tweeter_id: 1024jp
       description: |
         2004 年から脈々と受け継がれる総 Cocoa 製の macOS 用テキストエディタ [CotEditor](https://coteditor.com) は、昨年 2016 年に Objective-C から Swift に 100% 移行しました。
 
@@ -323,7 +271,7 @@
     - time: "21:35"
       title: "実践Swiftコンパイラ"
       url: "https://qiita.com/rintaro/items/e762d2a52c26a0be9fdc"
-      tweeterId: rintaro
+      tweeter_id: rintaro
       description: |
         この発表では、実際に Swift コンパイラのバグを修正し、プルリクエストを投げるまでの手続きを実践してみます。
 
@@ -335,7 +283,7 @@
     - time: "22:10"
       title: "Swiftに息づくstructural types"
       url: "https://qiita.com/takasek/items/c15ef7ce5a00e65a4ad2"
-      tweeterId: takasek
+      tweeter_id: takasek
       description: |
         プログラミング言語の型システムは、その型の同定やサブタイピングの方法に注目したとき、 nominal type system / structural type system の二種類に区分することができます。 nominal type system においては型名の宣言が明示的に行われた場合にのみ同じ型あるいはサブタイプと見做されますが、 structural type system では型名はただのエイリアスです。
 
@@ -345,7 +293,7 @@
     - time: "22:35"
       title: "純粋値型Swift"
       url: "https://qiita.com/koher/items/0745415a8b9842563ea7"
-      tweeterId: koher
+      tweeter_id: koher
       description: |
         Swift は値型を中心とした言語です。この発表では、仮に参照型を使わずに値型だけを使った場合、 Swift でどれだけのことができるかを探ります。
 
@@ -354,39 +302,32 @@
         Swift が最も利用されている iOS アプリ開発では、 UIKit 等の Objective-C 由来の Framework に引っ張られて参照型中心のプログラミングになってしまうことが多いと思います。そのため、せっかく値型中心の言語なのに Swift で値型中心のプログラミングをするための知見は十分に広まっていないように思います。この発表を通して、多くの人に値型中心でプログラミングをすることに対して興味を持っていただければと思います。
     - time: "23:00"
       name: "クロージング"
-2017-spring:
+- id: 2017-spring
   title: "Swift Tweets 2017 Spring"
-  shortTitle: "2017 Spring"
-  lastId: 2017-winter
+  short_title: "2017 Spring"
   hashtag: "swtws"
   date: "2017-04-15"
-  dayOfWeek: "SAT"
+  day_of_week: "SAT"
   time: "21:00"
   timezone: "JST"
-  entryLink: "https://swift-tweets.connpass.com/event/48887/"
+  entry_link: "https://swift-tweets.connpass.com/event/48887/"
   contact:
-    twitterId: koher
+    twitter_id: koher
     email: koher@koherent.org
   sponsors: []
-  tweeters:
-    - id: d_date
-      icon: https://pbs.twimg.com/profile_images/895152875155935234/f9h5niTO_400x400.jpg
-      profile: |
-        フリーランスでエンジニアをしています。 MRC の時代から iOS アプリの開発を行っていて、最近は [Realm News の日本語への翻訳](https://realm.io/jp/news/)や、[英語の勉強会](https://clem.connpass.com)の運営もしています。よく使うアーキテクチャは MVC です。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
+  tweeter_ids:
+    - d_date
+    - koher
   schedule:
     - time: "21:00"
       name: "オープニング"
     - time: "21:10"
       title: "Vapor as a web framework"
-      tweeterId: rb_de0
+      tweeter_id: rb_de0
     - time: "21:15"
       title: "Swift 4では何が変わりそうなのか"
       url: "https://qiita.com/d_date/items/b3562f542afc306791ce"
-      tweeterId: d_date
+      tweeter_id: d_date
       description: |
         Swift のバージョンアップは既存の API を使いやすく、美しくしてくれますが、痛みを伴うことが多いものとなっています。特に 2016 年は Swift 2.2 から 3.0 へのバージョンアップにより、その痛みを身を持って体験されたかと思います。また、 Xcode 8.3 から Swift 2.3 のサポートも終了し、 Swift 3 への移行を強いられることとなりました。
 
@@ -397,11 +338,11 @@
       name: 休憩
     - time: "22:05"
       title: "Swift Standard Library相関図"
-      tweeterId: S_Shimotori_pub
+      tweeter_id: S_Shimotori_pub
     - time: "22:10"
       title: SwiftのOptionalのベストプラクティス
       url: "https://qiita.com/koher/items/8b6156c8263b9b23c43c"
-      tweeterId: koher
+      tweeter_id: koher
       description: |
         2年程前、 Qiita に[『SwiftのOptional型を極める』](http://qiita.com/koher/items/c6f446bad54442a28bf4)という投稿をしました。内容は、 `Optional` とは何かという説明と、 `Optional` のベストプラクティスを合わせたようなものでした。
 
@@ -412,52 +353,40 @@
       name: 休憩
     - time: "22:50"
       title: "モックを「差し込む方法」を考える"
-      tweeterId: hironytic
+      tweeter_id: hironytic
     - time: "22:55"
       title: "Swiftで、ビデオ通話実装してみた"
-      tweeterId: nanamoto7483
+      tweeter_id: nanamoto7483
     - time: "23:00"
       name: "クロージング"
-2017-winter:
+- id: 2017-winter
   title: "Swift Tweets 2017 Winter"
-  shortTitle: "2017 Winter"
+  short_title: "2017 Winter"
   hashtag: "swtws"
   date: "2017-01-14"
-  dayOfWeek: "SAT"
+  day_of_week: "SAT"
   time: "22:00"
   timezone: "JST"
-  entryLink: "https://swift-tweets.connpass.com/event/45878/"
+  entry_link: "https://swift-tweets.connpass.com/event/45878/"
   contact:
-    twitterId: koher
+    twitter_id: koher
     email: koher@koherent.org
   sponsors:
     - id: "qiita"
       name: "Qiita"
       link: "http://qiita.com/"
-  tweeters:
-    - id: _mono
-      icon: https://pbs.twimg.com/profile_images/476454722593771520/goSBw3js.png
-      profile: |
-        [JOIN US](http://joinus30.com) のエンジニア。 [Qiita (@mono0926)](http://qiita.com/mono0926) ・ [Medium の Publication](https://medium.com/swift-column) ・ [Build Insiderオピニオン](http://www.buildinsider.net/column/ono-masayuki) などで、多数の Swift ・ iOS 系記事を書いている。開発だけでなく最新ガジェット使うのも好き。
-    - id: koher
-      icon: https://pbs.twimg.com/profile_images/468631313/koher3.gif
-      profile: |
-        [Qoncept](http://qoncept.co.jp/) のエンジニア。小学 4 年生のときにゲームを作りたくてプログラミングを始める。そのときの経験を元に、 RPG を作りながらプログラミングを学ぶ [SWIFT QUEST](https://swift-quest.github.io/) を開発中。 [Qiita](http://qiita.com/) での Swift に関する[投稿](http://qiita.com/koher)が人気。
-    - id: susieyy
-      icon: https://pbs.twimg.com/profile_images/526384966729355266/pVDh04p6.png
-      profile: |
-        [Wantedly](http://wantedly.com) の新規アプリ開発エンジニア。 [Swift について発表](http://connpass.com/user/youhei_sugigami/presentation/)したり [Qiita (@susieyy)](http://qiita.com/susieyy) で Swift について書いたりしています。
-    - id: tarunon
-      icon: https://pbs.twimg.com/profile_images/677005712497713152/X_2Mf8gO.jpg
-      profile: |
-        「たるのんだよ。すいふとをかくけど、おぶじぇしいもかくよ。」博多で Swift 書いてます。 `associatedtype` でガチガチに固めたコードを渡すと喜びます。 [GitHub はこちら](http://github.com/tarunon/)。
+  tweeter_ids:
+    - _mono
+    - koher
+    - susieyy
+    - tarunon
   schedule:
     - time: "22:00"
       name: "オープニング"
     - time: "22:05"
       title: Swift時代に悩ましいUIViewControllerをどう扱うか
       url: "https://qiita.com/susieyy/items/bf39c5769d8d4a56bb9b"
-      tweeterId: susieyy
+      tweeter_id: susieyy
       description: |
         iOS アプリ開発において `UIViewController` は画面のライフルサイクルや遷移を担う中心的な存在ですが、悩ましい課題もいくつか孕んでいます。そんな `UIViewController` を Swift を活用して課題に立ち向かってみます。
 
@@ -465,7 +394,7 @@
     - time: "22:35"
       title: Swiftのエラー4分類が素晴らしすぎるのでみんなに知ってほしい
       url: "https://qiita.com/koher/items/a7a12e7e18d2bb7d8c77"
-      tweeterId: koher
+      tweeter_id: koher
       description: |
         Swift Core Team がエラー処理について言語設計時に考察した ["Error Handling Rationale and Proposal"](https://github.com/apple/swift/blob/master/docs/ErrorHandlingRationale.rst) というドキュメントがあります。その中で、プログラミングにおけるエラーが次の四つに分類されています。
 
@@ -478,12 +407,12 @@
     - time: "23:05"
       title: Swiftの型の限界を超える
       url: "https://qiita.com/tarunon/items/e3fd01b02a199747eb5e"
-      tweeterId: tarunon
+      tweeter_id: tarunon
       description: Swift で `associatedtype` や Generics を駆使してプログラムを書いているとしばしば壁に打ち当たることがあると思います。気持ちよくコードを書いていたが、コンパイルが通らなくなってしまう。思い描いていた美しい世界が実現できずに悔しい思いをしたことはないでしょうか。このセッションでは、僕が Swift 3.0 以降で見つけた幾つかの「壁」と、それを超えるための Workaround を、コンパイルが通らなくなる原因とともに解説していきたいと思います。
     - time: "23:35"
       title: "SwiftのString(文字列) APIとの付き合い方"
       url: "https://qiita.com/mono0926/items/139014be6c15e32b9696"
-      tweeterId: _mono
+      tweeter_id: _mono
       description: |
         Swift の String (文字列) API は、文字列の概念を厳密に扱うようになっており良くできています。その反面、難しい・取っつきにくい・普段取り扱う際に不便、など気になる点もあります。そんな Swift の String API とどのように付き合っていけば良いだろうか、という考察をしていきます。
 
@@ -494,22 +423,22 @@
         - [「文字数」ってなぁに？〜String, NSString, Unicodeの基本〜 - Qiita](http://qiita.com/takasek/items/19438ecf7e60c8d53bbc)
     - time: "24:05"
       title: 型推論のビルドが遅いらしいから調べてみる
-      tweeterId: jpmartha_jp
+      tweeter_id: jpmartha_jp
     - time: "24:10"
       title: 恐怖！忍び寄るライブラリへのロックイン
-      tweeterId: takasek
+      tweeter_id: takasek
     - time: "24:15"
       title: 関数型プログラミングの実際のところ
-      tweeterId: S_Shimotori_pub
+      tweeter_id: S_Shimotori_pub
     - time: "24:20"
       title: "Never GiveUp"
-      tweeterId: es_kumagai
+      tweeter_id: es_kumagai
     - time: "24:25"
       title: iOSにおけるクリーンアーキテクチャよもやま話
-      tweeterId: ktanaka117
+      tweeter_id: ktanaka117
     - time: "24:30"
       title: "Clean Architecture 開発ツールの話"
-      tweeterId: yhirose741
+      tweeter_id: yhirose741
     - time: "24:35"
       name: "フリートーク"
       description: |
