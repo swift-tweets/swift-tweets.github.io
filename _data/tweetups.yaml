@@ -33,7 +33,7 @@
     - time: "22:05"
       name: "休憩"
     - time: "22:10"
-      title: "Coming soon"
+      title: "Swift デバッグの道具箱"
       tweeter_id: orga_chem
     - time: "22:20"
       title: "Swift4.2のRandom APIについて"
