@@ -19,9 +19,10 @@
     - time: "21:10"
       title: "Coming soon"
     - time: "22:35"
-      title: "Coming soon"
+      title: "iOSにとどまらないSwiftの可能性（機械学習からプログラミング教育まで）"
       tweeter_id: koher
-      description: Coming soon
+      description: |
+        Coming soon
     - time: "23:05"
       name: "クロージング"
 - id: 2018-summer
