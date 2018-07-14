@@ -1,6 +1,6 @@
 ---
 layout: common
-title: トーク一覧
+title: Potential Tour
 css:
   - talks
 ---
@@ -20,14 +20,12 @@ css:
                 <li>
                     <a href="/">{{ site.data.tweetups.first.short_title }}</a>
                 </li>
-                <li class="current">
+                <li>
                     <a href="talks">トーク一覧</a>
                 </li>
-                <!--
-                <li>
+                <li class="current">
                     <a href="potential-tour">Potential Tour</a>
                 </li>
-                -->
                 <li>
                     <a href="/#entry">参加方法</a>
                 </li>
@@ -46,6 +44,8 @@ css:
         <div class="row">
             {% assign tweeters = site.data.tweeters | sort: 'id' %}
             {% for tweeter in tweeters %}
+            {% for tour_item in site.data.potential_tour %}
+            {% unless tour_item.tweeter_id == tweeter.id %}{% continue %}{% endunless %}
             <div class="col-lg-6 col-sm-12 text-center">
                 <div class="tweeter">
                     <img class="portrait" src="{% if tweeter.icon %}{{ tweeter.icon }}{% else %}img/dark.png{% endif %}" alt="@{{ tweeter.id }}" />
@@ -54,7 +54,7 @@ css:
                     <hr class="primary">
                     <ul class="list-group">
                     {% for tweetup in site.data.tweetups %}
-                    {% if tweetup.is_draft %}{% continue %}{% endif %}
+                    {% unless tweetup.id == tour_item.tweetup_id %}{% continue %}{% endunless %}
                     {% for talk in tweetup.schedule %}
                     {% unless talk.description %}{% continue %}{% endunless %}
                     {% if talk.tweeter_id == tweeter.id %}
@@ -75,6 +75,7 @@ css:
                     </ul>
                 </div>
             </div>
+            {% endfor %}
             {% endfor %}
         </div>
     </div>
