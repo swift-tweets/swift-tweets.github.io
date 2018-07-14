@@ -47,6 +47,7 @@ css:
                     <ul class="dropdown-menu">
                         <li><a href="talks">トーク一覧</a></li>
                         {% for tweetup in site.data.tweetups %}
+                        {% if tweetup.is_draft %}{% continue %}{% endif %}
                         <li{% if tweetup.id == page.tweetup_id %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetup.id }}{% endif %}">{{ tweetup.short_title }}</a></li>
                         {% endfor %}
                     </ul>
@@ -54,6 +55,7 @@ css:
                 <li class="non-dropdown"><hr /></li>
                 <li class="non-dropdown"><a href="talks">トーク一覧</a></li>
                 {% for tweetup in site.data.tweetups %}
+                {% if tweetup.is_draft %}{% continue %}{% endif %}
                 <li class="non-dropdown{% if tweetup.id == page.tweetup_id %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetup.id }}{% endif %}">{{ tweetup.short_title }}</a></li>
                 {% endfor %}
             </ul>
