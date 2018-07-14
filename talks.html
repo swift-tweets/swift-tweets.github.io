@@ -23,9 +23,11 @@ css:
                 <li class="current">
                     <a href="talks">トーク一覧</a>
                 </li>
+                <!--
                 <li>
                     <a href="potential-tour">Potential Tour</a>
                 </li>
+                -->
                 <li>
                     <a href="/#entry">参加方法</a>
                 </li>
@@ -52,6 +54,7 @@ css:
                     <hr class="primary">
                     <ul class="list-group">
                     {% for tweetup in site.data.tweetups %}
+                    {% if tweetup.is_draft %}{% continue %}{% endif %}
                     {% for talk in tweetup.schedule %}
                     {% unless talk.description %}{% continue %}{% endunless %}
                     {% if talk.tweeter_id == tweeter.id %}
