@@ -69,6 +69,8 @@
       tweeter_id: orga_chem
     - time: "22:20"
       title: "Swift4.2のRandom APIについて"
+      url: "https://qiita.com/t-ae/items/1c5c2415c4469e6e6713"
+      tweets_url: "https://twitter.com/ar_t_ae/status/1018126081830850560"
       tweeter_id: ar_t_ae
     - time: "22:30"
       name: "休憩"
