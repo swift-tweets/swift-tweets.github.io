@@ -54,6 +54,7 @@
       name: "休憩"
     - time: "21:45"
       title: "Swift実装: iPhoneX、ARKit、クロマキー合成をリアルタイム配信に使ってみる"
+      tweets_url: "https://twitter.com/shmdevelop/status/1018116786162577409"
       tweeter_id: shmdevelop
     - time: "21:55"
       title: "Server Side Swift -Kitura & Vapor-"
