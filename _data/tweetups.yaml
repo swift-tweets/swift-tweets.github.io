@@ -65,6 +65,7 @@
       name: "休憩"
     - time: "22:10"
       title: "Swift デバッグの道具箱"
+      tweets_url: "https://twitter.com/orga_chem/status/1018123056026288128"
       tweeter_id: orga_chem
     - time: "22:20"
       title: "Swift4.2のRandom APIについて"
