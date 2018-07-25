@@ -1,3 +1,30 @@
+- id: 2018-fall
+  title: "Swift Tweets 2018 Fall"
+  short_title: "2018 Fall"
+  hashtag: "swtws"
+  date: "2018-10-20"
+  day_of_week: "SAT"
+  time: "21:00"
+  timezone: "JST"
+  entry_link: "https://swift-tweets.connpass.com/event/94689/"
+  contact:
+    twitter_id: koher
+    email: koher@koherent.org
+  sponsors: []
+  tweeter_ids:
+    - koher
+  schedule:
+    - time: "21:00"
+      name: "オープニング"
+    - time: "21:10"
+      title: "Coming soon"
+    - time: "22:35"
+      title: "iOSにとどまらないSwiftの可能性（機械学習からプログラミング教育まで）"
+      tweeter_id: koher
+      description: |
+        Coming soon
+    - time: "23:05"
+      name: "クロージング"
 - id: 2018-summer
   title: "Swift Tweets 2018 Summer"
   short_title: "2018 Summer"
@@ -445,32 +472,4 @@
 
         Swift Tweets の参加者一覧は[こちら](https://swift-tweets.connpass.com/event/45878/)です。
     - time: "24:55"
-      name: "クロージング"
-- id: 2018-fall
-  is_draft: true
-  title: "Swift Tweets 2018 Fall"
-  short_title: "2018 Fall"
-  hashtag: "swtws"
-  date: "2018-10-20"
-  day_of_week: "SAT"
-  time: "21:00"
-  timezone: "JST"
-  entry_link: "https://swift-tweets.connpass.com/event//"
-  contact:
-    twitter_id: koher
-    email: koher@koherent.org
-  sponsors: []
-  tweeter_ids:
-    - koher
-  schedule:
-    - time: "21:00"
-      name: "オープニング"
-    - time: "21:10"
-      title: "Coming soon"
-    - time: "22:35"
-      title: "iOSにとどまらないSwiftの可能性（機械学習からプログラミング教育まで）"
-      tweeter_id: koher
-      description: |
-        Coming soon
-    - time: "23:05"
       name: "クロージング"
