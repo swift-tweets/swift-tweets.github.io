@@ -46,6 +46,7 @@
       name: "オープニング"
     - time: "21:10"
       title: "Swiftの型システムにおけるサブタイピングの定義と実装"
+      tweets_url: "https://twitter.com/ukitaka_/status/1018106688824471553"
       tweeter_id: ukitaka_
       description: |
         Swiftの型システムには他の言語にはみられないような特徴がいくつかあり、それによって言語としての使いやすさが支えられています。 今回は特にサブタイピングに焦点をあてて、どんな規則があり、それがどのように実装されているかを解説してみたいと思います。
@@ -53,22 +54,30 @@
       name: "休憩"
     - time: "21:45"
       title: "Swift実装: iPhoneX、ARKit、クロマキー合成をリアルタイム配信に使ってみる"
+      tweets_url: "https://twitter.com/shmdevelop/status/1018116786162577409"
       tweeter_id: shmdevelop
     - time: "21:55"
       title: "Server Side Swift -Kitura & Vapor-"
+      url: "https://qiita.com/el_hrhm/items/ae93558cd40b92f02b62"
+      tweets_url: "https://twitter.com/el_hrhm/status/1018119592554651650"
       tweeter_id: el_hrhm
     - time: "22:05"
       name: "休憩"
     - time: "22:10"
       title: "Swift デバッグの道具箱"
+      tweets_url: "https://twitter.com/orga_chem/status/1018123056026288128"
       tweeter_id: orga_chem
     - time: "22:20"
       title: "Swift4.2のRandom APIについて"
+      url: "https://qiita.com/t-ae/items/1c5c2415c4469e6e6713"
+      tweets_url: "https://twitter.com/ar_t_ae/status/1018126081830850560"
       tweeter_id: ar_t_ae
     - time: "22:30"
       name: "休憩"
     - time: "22:35"
       title: "なぜSwiftのプロトコルはジェネリクスをサポートしないのか"
+      url: "https://qiita.com/koher/items/b21879a31210f7408502"
+      tweets_url: "https://twitter.com/koher/status/1018130208937816065"
       tweeter_id: koher
       description: |
         Swift のプロトコルはよく Java 等のインタフェースのようなものだと言われます。しかし、 Java 等のインタフェースとは異なり、 Swift のプロトコルはジェネリクスをサポートしていません。ジェネリクスの型パラメータの代わりにプロトコルは `associatedtype` を持てますが、 `associatedtype` を持ったプロトコル型の変数を作ることはできません。ジェネリックなインタフェースを作り、そのインタフェース型の変数を扱うことは、 Java 等ではあまりに当たり前に行われていることです。どうして Swift のプロトコルはそれができない仕様になっているのでしょうか。本トークでは、
