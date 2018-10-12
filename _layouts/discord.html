@@ -1,0 +1,125 @@
+---
+layout: common
+css:
+  - discord
+---
+{% for a_tweetup in site.data.tweetups %}
+    {% if a_tweetup.id == page.tweetup_id %}
+        {% assign tweetup = a_tweetup %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">{{ tweetup.title }}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#features">特徴</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#entry">参加方法</a>
+                </li>
+                {% if tweetup.sponsors.size > 0 %}
+                <li>
+                    <a class="page-scroll" href="#sponsors">スポンサー</a>
+                </li>
+                {% endif %}
+                <li>
+                    <a class="page-scroll" href="#contact">連絡先</a>
+                </li>
+                <li>
+                    <a href="talks">過去トーク一覧</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">履歴 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {% for tweetup in site.data.tweetups %}
+                        {% if tweetup.is_draft %}{% continue %}{% endif %}
+                        <li{% if tweetup.id == page.tweetup_id %} class="current"{% endif %}><a href="{% if forloop.first == true %}/{% else %}{{ tweetup.id }}{% endif %}">{{ tweetup.short_title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="non-dropdown"><hr /></li>
+                {% for tweetup in site.data.tweetups %}
+                {% if tweetup.is_draft %}{% continue %}{% endif %}
+                <li class="non-dropdown{% if tweetup.id == page.tweetup_id %} current{% endif %}"><a href="{% if forloop.first == true %}/{% else %}{{ tweetup.id }}{% endif %}">{{ tweetup.short_title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading"><img src="img/swift.png" alt="Swift Logo" /></h1>
+            <hr>
+            <h2><a href="">#swift-tweets</a></h2>
+            <h3>{{ tweetup.date }} {{ tweetup.time }} {{ tweetup.timezone }}</h3>
+            <p><strong>Swift Tweets</strong> は <a href="https://medium.com/swift-column/discord-ios-20d586e373c0">swift-developers-japan</a> 上で開催されるオンライン Meetup です。 Swift 関連のテーマについて <a href="https://discordapp.com/">Discord</a> で語り合います。</p>
+            <a href="#features" class="btn btn-primary btn-xl page-scroll">詳細を見る</a>
+        </div>
+    </div>
+</header>
+
+<section id="entry" {% if tweetup.sponsors.size > 0 %}class="bg-colored"{% else %}{% endif %}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">参加方法</h2>
+                <hr class="primary">
+                <p>下記ボタンから connpass で参加登録をお願い致します。 Twitter アカウントを使って登録可能です。当日は <a href="https://medium.com/swift-column/discord-ios-20d586e373c0">Discord の swift-developers-japan</a> サーバーに参加し、 <a href="">#swift-tweets</a> チャネルを御覧下さい。</p>
+                <a href="{{ tweetup.entry_link }}" class="btn btn-primary btn-xl">参加する</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if tweetup.sponsors.size > 0 %}
+<section id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">スポンサー</h2>
+                <hr class="primary">
+                {% for sponsor in tweetup.sponsors %}
+                <div class="text-center">
+                  <a href="{{ sponsor.link }}"><img class="sponsor" src="img/sponsors/{{ sponsor.id }}.png" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" /></a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<section id="contact" class="bg-colored">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">連絡先</h2>
+                <hr class="primary">
+                <p>Swift Tweets に関するお問い合わせは下記までお願い致します。</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                <i class="fa fa-twitter fa-3x sr-contact"></i>
+                <p><a href="https://twitter.com/{{ tweetup.contact.twitter_id }}">@{{ tweetup.contact.twitter_id }}</a></p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                <p><a href="mailto:{{ tweetup.contact.email }}">{{ tweetup.contact.email }}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
